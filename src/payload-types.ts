@@ -61,6 +61,22 @@ export type SupportedTimezones =
   | 'Pacific/Auckland'
   | 'Pacific/Fiji';
 
+export interface Ingredienti {
+  id: string
+}
+export interface Categorie {
+  id: string
+}
+export interface IndiciFit {
+  id: string
+}
+export interface Occasioni {
+  id: string
+}
+export interface Ricette {
+  id: string
+}
+
 export interface Config {
   auth: {
     users: UserAuthOperations;
@@ -69,6 +85,11 @@ export interface Config {
   collections: {
     users: User;
     media: Media;
+    ingredienti: Ingredienti;
+    categorie: Categorie;
+    'indici-fit': IndiciFit;
+    occasioni: Occasioni;
+    ricette: Ricette;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
