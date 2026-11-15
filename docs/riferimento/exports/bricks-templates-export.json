@@ -1,0 +1,3065 @@
+{
+  "bricks_template_header": {
+    "ID": 15,
+    "post_title": "Header",
+    "post_name": "header",
+    "post_type": "bricks_template",
+    "template_type": "header",
+    "template_settings": {
+      "headerSticky": true,
+      "headerStickyOnScroll": true,
+      "templatePreviewType": "single",
+      "templatePreviewPostId": "984"
+    },
+    "bricks_content": ""
+  },
+  "bricks_template_singola-ricetta": {
+    "ID": 46,
+    "post_title": "Singola ricetta",
+    "post_name": "singola-ricetta",
+    "post_type": "bricks_template",
+    "template_type": "content",
+    "template_settings": {
+      "templatePreviewType": "single",
+      "templateConditions": [
+        {
+          "id": "pnvfar",
+          "main": "postType",
+          "postType": [
+            "ricetta"
+          ]
+        }
+      ],
+      "templatePreviewPostId": "24"
+    },
+    "bricks_content": [
+      {
+        "id": "smvqtv",
+        "name": "section",
+        "parent": 0,
+        "children": [
+          "ruddyv"
+        ],
+        "settings": []
+      },
+      {
+        "id": "hgymav",
+        "name": "section",
+        "parent": 0,
+        "children": [
+          "oxvjeh"
+        ],
+        "settings": []
+      },
+      {
+        "id": "oxvjeh",
+        "name": "container",
+        "parent": "hgymav",
+        "children": [
+          "orwvay",
+          "ffquiv",
+          "fgrgvk",
+          "lgvgap",
+          "aeyzci",
+          "awcghf",
+          "eszego",
+          "jlticw",
+          "nbnwrg",
+          "zvuwic"
+        ],
+        "settings": []
+      },
+      {
+        "id": "fgrgvk",
+        "name": "post-title",
+        "parent": "oxvjeh",
+        "children": [],
+        "settings": {
+          "tag": "h1",
+          "_margin:mobile_portrait": {
+            "bottom": ".5rem"
+          },
+          "_cssGlobalClasses": [
+            "tzeday"
+          ]
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "lgvgap",
+        "name": "div",
+        "parent": "oxvjeh",
+        "children": [
+          "mgxrzb",
+          "srxvzw",
+          "fxuarh"
+        ],
+        "settings": {
+          "_margin:mobile_portrait": {
+            "bottom": "0.5rem"
+          },
+          "_columnGap:mobile_portrait": ".75rem",
+          "_alignItems:mobile_portrait": "flex-end",
+          "_display:mobile_portrait": "flex"
+        },
+        "label": "Indexes"
+      },
+      {
+        "id": "mgxrzb",
+        "name": "div",
+        "parent": "lgvgap",
+        "children": [
+          "qgqjle",
+          "gzdgec"
+        ],
+        "settings": {
+          "_alignItems:mobile_portrait": "center",
+          "_display:mobile_portrait": "flex",
+          "_direction:mobile_portrait": "column"
+        },
+        "label": "Index"
+      },
+      {
+        "id": "qgqjle",
+        "name": "text-basic",
+        "parent": "mgxrzb",
+        "children": [],
+        "settings": {
+          "text": "Difficoltà",
+          "_cssGlobalClasses": [
+            "vuaitc",
+            "uhgday"
+          ]
+        }
+      },
+      {
+        "id": "gzdgec",
+        "name": "div",
+        "parent": "mgxrzb",
+        "children": [
+          "orbson",
+          "gyqyxk"
+        ],
+        "settings": {
+          "_cssGlobalClasses": [
+            "yeccbt",
+            "vuaitc"
+          ],
+          "_display:mobile_portrait": "flex",
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#f288b1",
+              "rgb": "rgba(242, 136, 177, 0.2)",
+              "hsl": "hsla(337, 80%, 74%, 0.2)",
+              "id": "iztfzo",
+              "name": "Primary.900.20"
+            }
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": "0.25rem",
+              "right": "0.25rem",
+              "bottom": "0.25rem",
+              "left": "0.25rem"
+            }
+          }
+        },
+        "label": "Numbers holder"
+      },
+      {
+        "id": "orbson",
+        "name": "div",
+        "parent": "gzdgec",
+        "children": [
+          "pnksrn"
+        ],
+        "settings": {
+          "_padding:mobile_portrait": {
+            "top": "0.25rem",
+            "right": "0.25rem",
+            "bottom": "0.25rem",
+            "left": "0.25rem"
+          }
+        },
+        "label": "Number"
+      },
+      {
+        "id": "gyqyxk",
+        "name": "div",
+        "parent": "gzdgec",
+        "children": [
+          "nbhrmn"
+        ],
+        "settings": {
+          "_padding:mobile_portrait": {
+            "top": "0.25rem",
+            "right": "0.25rem",
+            "bottom": "0.25rem",
+            "left": "0.25rem"
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": "0.25rem",
+              "right": "0.25rem",
+              "bottom": "0.25rem",
+              "left": "0.25rem"
+            }
+          },
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#800031",
+              "id": "gkxbxv",
+              "name": "Primary.500.100"
+            }
+          },
+          "_typography:mobile_portrait": {
+            "color": {
+              "hex": "#ffffff",
+              "id": "etgmjp",
+              "name": "White"
+            }
+          }
+        },
+        "label": "Range"
+      },
+      {
+        "id": "pnksrn",
+        "name": "text-basic",
+        "parent": "orbson",
+        "children": [],
+        "settings": {
+          "_typography:mobile_portrait": {
+            "color": {
+              "hex": "#800031",
+              "id": "gkxbxv",
+              "name": "Primary.500.100"
+            }
+          },
+          "text": "{acf_difficolta}",
+          "_cssGlobalClasses": [
+            "oqqsvq"
+          ]
+        }
+      },
+      {
+        "id": "nbhrmn",
+        "name": "text-basic",
+        "parent": "gyqyxk",
+        "children": [],
+        "settings": {
+          "text": "/100"
+        }
+      },
+      {
+        "id": "srxvzw",
+        "name": "div",
+        "parent": "lgvgap",
+        "children": [
+          "sktwen",
+          "iieoyz"
+        ],
+        "settings": {
+          "_display:mobile_portrait": "flex",
+          "_direction:mobile_portrait": "column",
+          "_alignItems:mobile_portrait": "center"
+        },
+        "label": "Index"
+      },
+      {
+        "id": "sktwen",
+        "name": "text-basic",
+        "parent": "srxvzw",
+        "children": [],
+        "settings": {
+          "text": "Valutazione",
+          "_cssGlobalClasses": [
+            "hcdway",
+            "vuaitc",
+            "uhgday"
+          ]
+        }
+      },
+      {
+        "id": "iieoyz",
+        "name": "div",
+        "parent": "srxvzw",
+        "children": [
+          "khpvwx",
+          "ymoecd"
+        ],
+        "settings": {
+          "_cssGlobalClasses": [
+            "yeccbt",
+            "vuaitc"
+          ],
+          "_display:mobile_portrait": "flex",
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#f288b1",
+              "rgb": "rgba(242, 136, 177, 0.2)",
+              "hsl": "hsla(337, 80%, 74%, 0.2)",
+              "id": "iztfzo",
+              "name": "Primary.900.20"
+            }
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": "0.25rem",
+              "right": "0.25rem",
+              "bottom": "0.25rem",
+              "left": "0.25rem"
+            }
+          }
+        },
+        "label": "Numbers holder"
+      },
+      {
+        "id": "khpvwx",
+        "name": "div",
+        "parent": "iieoyz",
+        "children": [
+          "ooozkh"
+        ],
+        "settings": {
+          "_padding:mobile_portrait": {
+            "top": "0.25rem",
+            "right": "0.25rem",
+            "bottom": "0.25rem",
+            "left": "0.25rem"
+          }
+        },
+        "label": "Number"
+      },
+      {
+        "id": "ymoecd",
+        "name": "div",
+        "parent": "iieoyz",
+        "children": [
+          "zdomea"
+        ],
+        "settings": {
+          "_padding:mobile_portrait": {
+            "top": "0.25rem",
+            "right": "0.25rem",
+            "bottom": "0.25rem",
+            "left": "0.25rem"
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": "0.25rem",
+              "right": "0.25rem",
+              "bottom": "0.25rem",
+              "left": "0.25rem"
+            }
+          },
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#800031",
+              "id": "gkxbxv",
+              "name": "Primary.500.100"
+            }
+          },
+          "_typography:mobile_portrait": {
+            "color": {
+              "hex": "#ffffff",
+              "id": "etgmjp",
+              "name": "White"
+            }
+          }
+        },
+        "label": "Range"
+      },
+      {
+        "id": "ooozkh",
+        "name": "text-basic",
+        "parent": "khpvwx",
+        "children": [],
+        "settings": {
+          "_typography:mobile_portrait": {
+            "color": {
+              "hex": "#800031",
+              "id": "gkxbxv",
+              "name": "Primary.500.100"
+            }
+          },
+          "_cssGlobalClasses": [
+            "oqqsvq"
+          ],
+          "text": "{acf_valutazione}"
+        }
+      },
+      {
+        "id": "zdomea",
+        "name": "text-basic",
+        "parent": "ymoecd",
+        "children": [],
+        "settings": {
+          "text": "/100"
+        }
+      },
+      {
+        "id": "fxuarh",
+        "name": "div",
+        "parent": "lgvgap",
+        "children": [
+          "tdstmo"
+        ],
+        "settings": {
+          "_padding:mobile_portrait": {
+            "top": "0.25rem",
+            "right": "0.25rem",
+            "bottom": "0.25rem",
+            "left": "0.25rem"
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": "0.25rem",
+              "right": "0.25rem",
+              "bottom": "0.25rem",
+              "left": "0.25rem"
+            }
+          },
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#f288b1",
+              "rgb": "rgba(242, 136, 177, 0.2)",
+              "hsl": "hsla(337, 80%, 74%, 0.2)",
+              "id": "iztfzo",
+              "name": "Primary.900.20"
+            }
+          },
+          "_typography:mobile_portrait": {
+            "color": {
+              "hex": "#800031",
+              "id": "gkxbxv",
+              "name": "Primary.500.100"
+            }
+          }
+        }
+      },
+      {
+        "id": "tdstmo",
+        "name": "text-basic",
+        "parent": "fxuarh",
+        "children": [],
+        "settings": {
+          "_cssGlobalClasses": [
+            "vuaitc",
+            "oqqsvq",
+            "uhgday"
+          ],
+          "text": "{post_terms_indice-fit}"
+        }
+      },
+      {
+        "id": "aeyzci",
+        "name": "div",
+        "parent": "oxvjeh",
+        "children": [
+          "gytuji",
+          "fovopj"
+        ],
+        "settings": {
+          "_display:mobile_portrait": "flex",
+          "_columnGap:mobile_portrait": "1rem",
+          "_margin:mobile_portrait": {
+            "bottom": "0.5rem"
+          }
+        },
+        "label": "Timing"
+      },
+      {
+        "id": "gytuji",
+        "name": "div",
+        "parent": "aeyzci",
+        "children": [
+          "owyfbd",
+          "amjito",
+          "rhysex"
+        ],
+        "settings": {
+          "_display:mobile_portrait": "flex",
+          "_columnGap:mobile_portrait": "0.25rem",
+          "_alignItems:mobile_portrait": "center"
+        },
+        "label": "Time"
+      },
+      {
+        "id": "amjito",
+        "name": "text-basic",
+        "parent": "gytuji",
+        "children": [],
+        "settings": {
+          "text": "Preparazione",
+          "_typography:mobile_portrait": {
+            "font-family": "Sora"
+          },
+          "_cssGlobalClasses": [
+            "hcdway",
+            "vuaitc"
+          ]
+        }
+      },
+      {
+        "id": "rhysex",
+        "name": "text-basic",
+        "parent": "gytuji",
+        "children": [],
+        "settings": {
+          "text": "{acf_tempo} minuti",
+          "_cssGlobalClasses": [
+            "hcdway",
+            "vuaitc",
+            "oqqsvq"
+          ]
+        }
+      },
+      {
+        "id": "owyfbd",
+        "name": "svg",
+        "parent": "gytuji",
+        "children": [],
+        "settings": {
+          "source": "code",
+          "code": "<svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M17 9C17 13.4186 13.4186 17 9 17C4.58141 17 1 13.4186 1 9C1 4.58141 4.58141 1 9 1C13.4186 1 17 4.58141 17 9Z\" stroke=\"#800031\" stroke-width=\"1.5\" stroke-linecap=\"square\"/>\n<path d=\"M12.0442 11.4614L8.78369 9.51632V5.32432\" stroke=\"#800031\" stroke-width=\"1.5\" stroke-linecap=\"square\"/>\n</svg>",
+          "signature": "9ab7dec7657b334cc5ec690c3a86df04",
+          "user_id": 3,
+          "time": 1740311953
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "fovopj",
+        "name": "div",
+        "parent": "aeyzci",
+        "children": [
+          "rxqnvm",
+          "othgrn",
+          "kjvggt"
+        ],
+        "settings": {
+          "_display:mobile_portrait": "flex",
+          "_alignItems:mobile_portrait": "center",
+          "_columnGap:mobile_portrait": "0.25rem"
+        },
+        "label": "Time"
+      },
+      {
+        "id": "rxqnvm",
+        "name": "svg",
+        "parent": "fovopj",
+        "children": [],
+        "settings": {
+          "source": "code",
+          "code": "<svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M17 9C17 13.4186 13.4186 17 9 17C4.58141 17 1 13.4186 1 9C1 4.58141 4.58141 1 9 1C13.4186 1 17 4.58141 17 9Z\" stroke=\"#800031\" stroke-width=\"1.5\" stroke-linecap=\"square\"/>\n<path d=\"M12.0442 11.4614L8.78369 9.51632V5.32432\" stroke=\"#800031\" stroke-width=\"1.5\" stroke-linecap=\"square\"/>\n</svg>",
+          "signature": "9ab7dec7657b334cc5ec690c3a86df04",
+          "user_id": 3,
+          "time": 1740311960
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "othgrn",
+        "name": "text-basic",
+        "parent": "fovopj",
+        "children": [],
+        "settings": {
+          "text": "Cottura",
+          "_cssGlobalClasses": [
+            "hcdway",
+            "vuaitc"
+          ]
+        }
+      },
+      {
+        "id": "kjvggt",
+        "name": "text-basic",
+        "parent": "fovopj",
+        "children": [],
+        "settings": {
+          "text": "{acf_cottura} minuti",
+          "_cssGlobalClasses": [
+            "hcdway",
+            "vuaitc",
+            "oqqsvq"
+          ]
+        }
+      },
+      {
+        "id": "awcghf",
+        "name": "text",
+        "parent": "oxvjeh",
+        "children": [],
+        "settings": {
+          "text": "<p>{acf_introduzione}</p>"
+        },
+        "label": "Introduzione"
+      },
+      {
+        "id": "jlticw",
+        "name": "block",
+        "parent": "oxvjeh",
+        "children": [
+          "lkbequ",
+          "vtxnpc"
+        ],
+        "settings": {
+          "_margin:mobile_portrait": {
+            "bottom": "2rem"
+          },
+          "_direction:mobile_portrait": "column",
+          "_justifyContent:mobile_portrait": "space-between",
+          "_alignItems:mobile_portrait": "center",
+          "_padding:mobile_portrait": {
+            "top": ".5rem",
+            "right": ".5rem",
+            "bottom": ".5rem",
+            "left": ".5rem"
+          },
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#f288b1",
+              "rgb": "rgba(242, 136, 177, 0.2)",
+              "hsl": "hsla(337, 80%, 74%, 0.2)",
+              "id": "iztfzo",
+              "name": "Primary.900.20"
+            }
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "right": ".25rem",
+              "bottom": ".25rem",
+              "left": ".25rem"
+            }
+          },
+          "_cssGlobalClasses": [
+            "yozztc"
+          ]
+        },
+        "label": "Ingredienti"
+      },
+      {
+        "id": "rwlvhg",
+        "name": "heading",
+        "parent": "lkbequ",
+        "children": [],
+        "settings": {
+          "text": "Ingredienti",
+          "tag": "h2"
+        }
+      },
+      {
+        "id": "fwpxby",
+        "name": "text-basic",
+        "parent": "lkbequ",
+        "children": [],
+        "settings": {
+          "text": "{acf_dosi_per}",
+          "_cssGlobalClasses": [
+            "uhgday"
+          ]
+        },
+        "label": "Persone"
+      },
+      {
+        "id": "mehbbj",
+        "name": "block",
+        "parent": "vtxnpc",
+        "children": [
+          "kitgrp",
+          "szwlie"
+        ],
+        "settings": {
+          "_direction:mobile_portrait": "row",
+          "_columnGap:mobile_portrait": ".5rem",
+          "_padding:mobile_portrait": {
+            "bottom": "0.25rem",
+            "top": "0.25rem"
+          },
+          "_border:mobile_portrait": {
+            "width": {
+              "bottom": "1"
+            },
+            "style": "solid",
+            "color": {
+              "hex": "#ffffff",
+              "id": "etgmjp",
+              "name": "White"
+            }
+          },
+          "hasLoop": true,
+          "query": {
+            "objectType": "acf_ingredienti_main_ingredienti_sub"
+          }
+        },
+        "label": "Ingrediente"
+      },
+      {
+        "id": "kitgrp",
+        "name": "div",
+        "parent": "mehbbj",
+        "children": [
+          "ohvwun"
+        ],
+        "settings": [],
+        "label": "Qty"
+      },
+      {
+        "id": "ohvwun",
+        "name": "text-basic",
+        "parent": "kitgrp",
+        "children": [],
+        "settings": {
+          "_cssGlobalClasses": [
+            "oqqsvq",
+            "yeccbt"
+          ],
+          "text": "{acf_ingredienti_sub_dose_ingrediente_sub}"
+        }
+      },
+      {
+        "id": "szwlie",
+        "name": "text-basic",
+        "parent": "mehbbj",
+        "children": [],
+        "settings": {
+          "text": "{acf_ingredienti_sub_nome_ingrediente_sub}"
+        },
+        "label": "Name"
+      },
+      {
+        "id": "lkbequ",
+        "name": "block",
+        "parent": "jlticw",
+        "children": [
+          "rwlvhg",
+          "fwpxby"
+        ],
+        "settings": {
+          "_display:mobile_portrait": "flex",
+          "_direction:mobile_portrait": "row",
+          "_justifyContent:mobile_portrait": "space-between",
+          "_alignItems:mobile_portrait": "center",
+          "_margin:mobile_portrait": {
+            "bottom": "1rem"
+          }
+        }
+      },
+      {
+        "id": "nbnwrg",
+        "name": "heading",
+        "parent": "oxvjeh",
+        "children": [],
+        "settings": {
+          "_margin:mobile_portrait": {
+            "bottom": "1rem"
+          },
+          "text": "Procedimento {post_title}",
+          "tag": "h2"
+        },
+        "label": "Procedimento"
+      },
+      {
+        "id": "zvuwic",
+        "name": "block",
+        "parent": "oxvjeh",
+        "children": [
+          "qyxxwk",
+          "tjwtoj",
+          "emnmqc",
+          "pwimbb",
+          "ezgngb",
+          "bzcreu"
+        ],
+        "settings": {
+          "_margin:mobile_portrait": {
+            "bottom": "2rem"
+          },
+          "hasLoop": true,
+          "query": {
+            "objectType": "acf_step"
+          },
+          "_padding:mobile_portrait": {
+            "top": ".75rem",
+            "right": ".75rem",
+            "bottom": ".75rem",
+            "left": ".75rem"
+          },
+          "_gradient:mobile_portrait": {
+            "applyTo": "background",
+            "colors": [
+              {
+                "id": "kfmgdk",
+                "color": {
+                  "hex": "#ffffff",
+                  "id": "etgmjp",
+                  "name": "White"
+                }
+              },
+              {
+                "id": "heudoj",
+                "color": {
+                  "hex": "#271119",
+                  "rgb": "rgba(39, 17, 25, 0.05)",
+                  "hsl": "hsla(338, 39%, 11%, 0.05)"
+                }
+              }
+            ]
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "left": ".25rem",
+              "bottom": ".25rem"
+            }
+          }
+        },
+        "label": "Step"
+      },
+      {
+        "id": "tjwtoj",
+        "name": "block",
+        "parent": "zvuwic",
+        "children": [
+          "boemlk",
+          "gsatno"
+        ],
+        "settings": {
+          "_direction:mobile_portrait": "row",
+          "_flexWrap:mobile_portrait": "nowrap",
+          "_columnGap:mobile_portrait": ".5rem",
+          "_justifyContent:mobile_portrait": "space-between",
+          "_alignItems:mobile_portrait": "stretch"
+        },
+        "label": "Step inner"
+      },
+      {
+        "id": "gsatno",
+        "name": "div",
+        "parent": "tjwtoj",
+        "children": [
+          "ioahtv"
+        ],
+        "settings": {
+          "_direction:mobile_portrait": "column",
+          "_display:mobile_portrait": "flex",
+          "_padding:mobile_portrait": {
+            "left": ".5rem"
+          },
+          "_border:mobile_portrait": {
+            "width": {
+              "left": "1"
+            },
+            "style": "solid",
+            "color": {
+              "hex": "#f288b1",
+              "rgb": "rgba(242, 136, 177, 0.2)",
+              "hsl": "hsla(337, 80%, 74%, 0.2)",
+              "id": "iztfzo",
+              "name": "Primary.900.20"
+            }
+          },
+          "_cssGlobalClasses": [
+            "ytpxtt"
+          ],
+          "_flexBasis:mobile_portrait": "30%"
+        },
+        "label": "Step ingredients"
+      },
+      {
+        "id": "boemlk",
+        "name": "div",
+        "parent": "tjwtoj",
+        "children": [
+          "xtvkcl"
+        ],
+        "settings": {
+          "_flexBasis:mobile_portrait": "70%",
+          "_flexGrow:mobile_portrait": "1"
+        },
+        "label": "Step desc"
+      },
+      {
+        "id": "xtvkcl",
+        "name": "text",
+        "parent": "boemlk",
+        "children": [],
+        "settings": {
+          "text": "<p>{acf_step_procedimento}</p>"
+        }
+      },
+      {
+        "id": "eiwgoo",
+        "name": "text-basic",
+        "parent": "ioahtv",
+        "children": [],
+        "settings": {
+          "text": "{acf_ingredienti-step_quantita-ingrediente-step}",
+          "_cssGlobalClasses": [
+            "yeccbt",
+            "oqqsvq"
+          ]
+        },
+        "label": "Qty"
+      },
+      {
+        "id": "ioahtv",
+        "name": "block",
+        "parent": "gsatno",
+        "children": [
+          "sombjm",
+          "eiwgoo"
+        ],
+        "settings": {
+          "_margin:mobile_portrait": {
+            "bottom": ".5rem"
+          },
+          "hasLoop": true,
+          "query": {
+            "objectType": "acf_step_ingredienti-step"
+          },
+          "_cssGlobalClasses": [
+            "lumnjl"
+          ]
+        },
+        "label": "Step ingredient"
+      },
+      {
+        "id": "sombjm",
+        "name": "text-basic",
+        "parent": "ioahtv",
+        "children": [],
+        "settings": {
+          "text": "{acf_ingredienti-step_ingrediente-step}"
+        },
+        "label": "Name"
+      },
+      {
+        "id": "pwimbb",
+        "name": "block",
+        "parent": "zvuwic",
+        "children": [
+          "ugiqzv"
+        ],
+        "settings": {
+          "_conditions": [
+            [
+              {
+                "id": "tfkqgr",
+                "key": "dynamic_data",
+                "compare": "!=",
+                "dynamic_data": "{acf_step_step_gallery}"
+              }
+            ]
+          ],
+          "_margin:mobile_portrait": {
+            "bottom": ".5rem",
+            "top": ".5rem"
+          },
+          "_padding:mobile_portrait": {
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0"
+          }
+        },
+        "label": "Gallery"
+      },
+      {
+        "id": "tnplwr",
+        "name": "text-basic",
+        "parent": "myrwze",
+        "children": [],
+        "settings": {
+          "_padding:mobile_portrait": {
+            "top": ".125rem",
+            "right": ".25rem",
+            "bottom": ".125rem",
+            "left": ".25rem"
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "right": ".25rem",
+              "bottom": ".25rem",
+              "left": ".25rem"
+            }
+          },
+          "text": "{term_name}",
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#f288b1",
+              "rgb": "rgba(242, 136, 177, 0.2)",
+              "hsl": "hsla(337, 80%, 74%, 0.2)",
+              "id": "iztfzo",
+              "name": "Primary.900.20"
+            }
+          },
+          "_typography:mobile_portrait": {
+            "color": {
+              "hex": "#800031",
+              "id": "gkxbxv",
+              "name": "Primary.500.100"
+            }
+          },
+          "_cssGlobalClasses": [
+            "yeccbt",
+            "vuaitc"
+          ]
+        }
+      },
+      {
+        "id": "orwvay",
+        "name": "block",
+        "parent": "oxvjeh",
+        "children": [
+          "myrwze",
+          "kmawus"
+        ],
+        "settings": {
+          "_direction:mobile_portrait": "row",
+          "_columnGap:mobile_portrait": ".5rem",
+          "query": {
+            "objectType": "term",
+            "taxonomy": [
+              "categoria-ricetta"
+            ],
+            "current_post_term": true
+          },
+          "_margin:mobile_portrait": {
+            "bottom": ".75rem"
+          }
+        },
+        "label": "Term list"
+      },
+      {
+        "id": "myrwze",
+        "name": "div",
+        "parent": "orwvay",
+        "children": [
+          "tnplwr"
+        ],
+        "settings": {
+          "query": {
+            "objectType": "term",
+            "taxonomy": [
+              "categoria-ricetta"
+            ],
+            "current_post_term": true
+          },
+          "hasLoop": true
+        }
+      },
+      {
+        "id": "kmawus",
+        "name": "div",
+        "parent": "orwvay",
+        "children": [
+          "tmpnqu"
+        ],
+        "settings": {
+          "hasLoop": true,
+          "query": {
+            "objectType": "term",
+            "taxonomy": [
+              "occasione"
+            ],
+            "current_post_term": true
+          }
+        }
+      },
+      {
+        "id": "tmpnqu",
+        "name": "text-basic",
+        "parent": "kmawus",
+        "children": [],
+        "settings": {
+          "text": "{term_name}",
+          "_padding:mobile_portrait": {
+            "left": ".25rem",
+            "right": ".25rem",
+            "bottom": ".125rem",
+            "top": ".125rem"
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "right": ".25rem",
+              "bottom": ".25rem",
+              "left": ".25rem"
+            }
+          },
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#f288b1",
+              "rgb": "rgba(242, 136, 177, 0.2)",
+              "hsl": "hsla(337, 80%, 74%, 0.2)",
+              "id": "iztfzo",
+              "name": "Primary.900.20"
+            }
+          },
+          "_typography:mobile_portrait": {
+            "color": {
+              "hex": "#800031",
+              "id": "gkxbxv",
+              "name": "Primary.500.100"
+            }
+          },
+          "_cssGlobalClasses": [
+            "yeccbt",
+            "vuaitc"
+          ]
+        }
+      },
+      {
+        "id": "ruddyv",
+        "name": "image",
+        "parent": "smvqtv",
+        "children": [],
+        "settings": {
+          "caption": "none",
+          "_aspectRatio:mobile_portrait": "3/2",
+          "_objectFit:mobile_portrait": "cover",
+          "_widthMax:mobile_portrait": "1260px",
+          "_width:mobile_portrait": "100%",
+          "image": {
+            "useDynamicData": "{featured_image}",
+            "size": "large",
+            "filename": "20230402_164039.webp",
+            "id": 213,
+            "url": "https://micimetto.acasolino.com/wp-content/uploads/2023/04/20230402_164039-scaled-e1680502136153-1024x671.webp"
+          },
+          "_widthMax": "80ch",
+          "_border": {
+            "radius": {
+              "left": ".5rem",
+              "bottom": ".5rem"
+            }
+          }
+        }
+      },
+      {
+        "id": "vtxnpc",
+        "name": "block",
+        "parent": "jlticw",
+        "children": [
+          "pvuiwt",
+          "mehbbj"
+        ],
+        "settings": {
+          "hasLoop": true,
+          "query": {
+            "objectType": "acf_ingredienti_main"
+          },
+          "_margin:mobile_portrait": {
+            "bottom": "1rem"
+          }
+        }
+      },
+      {
+        "id": "swbtte",
+        "name": "div",
+        "parent": 0,
+        "children": [
+          "afrsvu",
+          "hbfznt",
+          "trjdkx"
+        ],
+        "settings": {
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#800031",
+              "id": "gkxbxv",
+              "name": "Primary.500.100"
+            }
+          },
+          "_position:mobile_portrait": "fixed",
+          "_top:mobile_portrait": "30vw",
+          "_right:mobile_portrait": "0",
+          "_display:mobile_portrait": "flex",
+          "_direction:mobile_portrait": "column",
+          "_padding:mobile_portrait": {
+            "top": ".5rem",
+            "right": ".5rem",
+            "bottom": ".5rem",
+            "left": ".5rem"
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "left": ".25rem"
+            }
+          }
+        }
+      },
+      {
+        "id": "onlegr",
+        "name": "offcanvas",
+        "parent": 0,
+        "children": [
+          "ysqsce",
+          "yahler"
+        ],
+        "settings": {
+          "width:mobile_portrait": "75vw"
+        }
+      },
+      {
+        "id": "kbkrce",
+        "name": "block",
+        "parent": "rwakun",
+        "children": [
+          "ashyar",
+          "zokwkk"
+        ],
+        "settings": {
+          "_display:mobile_portrait": "flex",
+          "_direction:mobile_portrait": "row",
+          "_justifyContent:mobile_portrait": "space-between",
+          "_alignItems:mobile_portrait": "center",
+          "_margin:mobile_portrait": {
+            "bottom": "1rem"
+          }
+        }
+      },
+      {
+        "id": "ashyar",
+        "name": "heading",
+        "parent": "kbkrce",
+        "children": [],
+        "settings": {
+          "text": "Ingredienti",
+          "tag": "h5"
+        }
+      },
+      {
+        "id": "zokwkk",
+        "name": "text-basic",
+        "parent": "kbkrce",
+        "children": [],
+        "settings": {
+          "text": "{acf_dosi_per}",
+          "_cssGlobalClasses": [
+            "uhgday"
+          ]
+        },
+        "label": "Persone"
+      },
+      {
+        "id": "oocfut",
+        "name": "block",
+        "parent": "rwakun",
+        "children": [
+          "bxsvtv"
+        ],
+        "settings": {
+          "hasLoop": true,
+          "query": {
+            "objectType": "acf_ingredienti_main"
+          }
+        }
+      },
+      {
+        "id": "bxsvtv",
+        "name": "block",
+        "parent": "oocfut",
+        "children": [
+          "sgyuok",
+          "gqqqqf"
+        ],
+        "settings": {
+          "hasLoop": true,
+          "query": {
+            "objectType": "acf_ingredienti_main_ingredienti_sub"
+          },
+          "_direction:mobile_portrait": "row",
+          "_columnGap:mobile_portrait": ".5rem",
+          "_padding:mobile_portrait": {
+            "bottom": "0.25rem",
+            "top": "0.25rem"
+          },
+          "_border:mobile_portrait": {
+            "width": {
+              "bottom": "1"
+            },
+            "style": "solid",
+            "color": {
+              "hex": "#ffffff",
+              "rgb": "rgba(255, 255, 255, 0.2)",
+              "hsl": "hsla(0, 0%, 100%, 0.2)",
+              "id": "xuyfev",
+              "name": "White.20"
+            }
+          }
+        },
+        "label": "Ingrediente"
+      },
+      {
+        "id": "sgyuok",
+        "name": "div",
+        "parent": "bxsvtv",
+        "children": [
+          "pygwgx"
+        ],
+        "settings": [],
+        "label": "Qty"
+      },
+      {
+        "id": "pygwgx",
+        "name": "text-basic",
+        "parent": "sgyuok",
+        "children": [],
+        "settings": {
+          "_cssGlobalClasses": [
+            "oqqsvq",
+            "yeccbt"
+          ],
+          "text": "{acf_ingredienti_sub_dose_ingrediente_sub}",
+          "_typography:mobile_portrait": {
+            "color": {
+              "hex": "#ffffff",
+              "id": "etgmjp",
+              "name": "White"
+            }
+          }
+        }
+      },
+      {
+        "id": "gqqqqf",
+        "name": "text-basic",
+        "parent": "bxsvtv",
+        "children": [],
+        "settings": {
+          "text": "{acf_ingredienti_sub_nome_ingrediente_sub}",
+          "_typography:mobile_portrait": {
+            "color": {
+              "hex": "#ffffff",
+              "id": "etgmjp",
+              "name": "White"
+            }
+          }
+        },
+        "label": "Name"
+      },
+      {
+        "id": "ysqsce",
+        "name": "block",
+        "parent": "onlegr",
+        "children": [
+          "rwakun"
+        ],
+        "settings": {
+          "_hidden": {
+            "_cssClasses": "brx-offcanvas-inner"
+          },
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#261119",
+              "id": "shaleu",
+              "name": "Primary.200.100"
+            }
+          }
+        },
+        "label": "Content",
+        "cloneable": false,
+        "deletable": false
+      },
+      {
+        "id": "ivfewd",
+        "name": "toggle",
+        "parent": "rwakun",
+        "children": [],
+        "settings": {
+          "icon": {
+            "library": "themify",
+            "icon": "ti-close"
+          },
+          "iconSize:mobile_portrait": "24",
+          "iconColor:mobile_portrait": {
+            "hex": "#ffffff",
+            "id": "etgmjp",
+            "name": "White"
+          },
+          "_margin:mobile_portrait": {
+            "bottom": "3rem"
+          },
+          "toggleSelector": "#brxe-onlegr"
+        },
+        "label": "Toggle (Close)",
+        "themeStyles": []
+      },
+      {
+        "id": "yahler",
+        "name": "block",
+        "parent": "onlegr",
+        "children": [],
+        "settings": {
+          "_hidden": {
+            "_cssClasses": "brx-offcanvas-backdrop"
+          }
+        },
+        "label": "Backdrop"
+      },
+      {
+        "id": "trjdkx",
+        "name": "toggle",
+        "parent": "swbtte",
+        "children": [],
+        "settings": {
+          "icon": {
+            "library": "themify",
+            "icon": "ti-list"
+          },
+          "_cssGlobalClasses": [
+            "csvptq"
+          ],
+          "toggleSelector": "#brxe-onlegr",
+          "_display": "flex"
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "afrsvu",
+        "name": "svg",
+        "parent": "swbtte",
+        "children": [],
+        "settings": {
+          "_cssGlobalClasses": [
+            "xjmcuj"
+          ],
+          "source": "code",
+          "code": "<svg width=\"25\" height=\"25\" viewBox=\"0 0 25 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M15.2576 14.3261C15.2576 16.0721 13.8416 17.4871 12.0956 17.4871C10.3496 17.4871 8.93457 16.0721 8.93457 14.3261C8.93457 12.5791 10.3496 11.1641 12.0956 11.1641C13.8416 11.1641 15.2576 12.5791 15.2576 14.3261Z\" stroke=\"black\" stroke-width=\"1.5\" stroke-linecap=\"square\"/>\n<path d=\"M21.3467 14.3253C19.3857 10.1972 15.9027 7.7207 12.0947 7.7207H12.0987C8.29068 7.7207 4.80768 10.1972 2.84668 14.3253\" stroke=\"black\" stroke-width=\"1.5\" stroke-linecap=\"square\"/>\n</svg>\n",
+          "stroke:mobile_portrait": {
+            "hex": "#ffffff",
+            "id": "etgmjp",
+            "name": "White"
+          },
+          "height:mobile_portrait": "32",
+          "width:mobile_portrait": "32",
+          "_heightMin:mobile_portrait": "32px",
+          "signature": "0f1e6ea0b13c59398a2b157990c15e40",
+          "user_id": 3,
+          "time": 1740311988
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "hbfznt",
+        "name": "svg",
+        "parent": "swbtte",
+        "children": [],
+        "settings": {
+          "source": "code",
+          "code": "<svg width=\"25\" height=\"25\" viewBox=\"0 0 25 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.5 8.01078C19.539 12.1389 16.056 14.6154 12.248 14.6154H12.252C8.444 14.6154 4.961 12.1389 3 8.01078\" stroke=\"black\" stroke-width=\"1.5\" stroke-linecap=\"square\"/>\n<path d=\"M18.8397 11.8795L20.9508 13.9906\" stroke=\"black\" stroke-width=\"1.5\" stroke-linecap=\"square\"/>\n<path d=\"M5.58124 11.8795L3.47013 13.9906\" stroke=\"black\" stroke-width=\"1.5\" stroke-linecap=\"square\"/>\n<path d=\"M15.4268 17.1969L14.5823 14.2874\" stroke=\"black\" stroke-width=\"1.5\" stroke-linecap=\"square\"/>\n<path d=\"M8.99338 17.1971L9.83789 14.2876\" stroke=\"black\" stroke-width=\"1.5\" stroke-linecap=\"square\"/>\n</svg>\n",
+          "stroke:mobile_portrait": {
+            "hex": "#ffffff",
+            "id": "etgmjp",
+            "name": "White"
+          },
+          "_cssGlobalClasses": [
+            "qdrtsn"
+          ],
+          "height:mobile_portrait": "32",
+          "width:mobile_portrait": "32",
+          "_heightMin:mobile_portrait": "32px",
+          "signature": "34632a41bf42739506f86c10379e44c5",
+          "user_id": 3,
+          "time": 1740311948
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "qyxxwk",
+        "name": "code",
+        "parent": "zvuwic",
+        "children": [],
+        "settings": {
+          "code": "<h3>Step <?php echo intval( Bricks\\Query::get_loop_index() ) + 1 ?></h3>",
+          "executeCode": true,
+          "signature": "5226fe51082c4a35635014dc36d812ea",
+          "user_id": 3,
+          "time": 1740311988
+        },
+        "themeStyles": [],
+        "label": "Step#"
+      },
+      {
+        "id": "bzcreu",
+        "name": "block",
+        "parent": "zvuwic",
+        "children": [
+          "zfmqqn",
+          "xpljto"
+        ],
+        "settings": {
+          "_padding:mobile_portrait": {
+            "top": ".5rem",
+            "right": ".5rem",
+            "bottom": ".5rem",
+            "left": ".5rem"
+          },
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#f288b1",
+              "rgb": "rgba(242, 136, 177, 0.2)",
+              "hsl": "hsla(337, 80%, 74%, 0.2)",
+              "id": "iztfzo",
+              "name": "Primary.900.20"
+            }
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "right": ".25rem",
+              "bottom": ".25rem",
+              "left": ".25rem"
+            }
+          },
+          "_conditions": [
+            [
+              {
+                "id": "tfkqgr",
+                "key": "dynamic_data",
+                "dynamic_data": "{acf_step_tip}",
+                "compare": "!="
+              }
+            ]
+          ]
+        },
+        "label": "Tip"
+      },
+      {
+        "id": "zfmqqn",
+        "name": "block",
+        "parent": "bzcreu",
+        "children": [
+          "hkkgge",
+          "wugeqj"
+        ],
+        "settings": {
+          "_direction:mobile_portrait": "row",
+          "_justifyContent:mobile_portrait": "space-between",
+          "_alignItems:mobile_portrait": "center"
+        }
+      },
+      {
+        "id": "xpljto",
+        "name": "text",
+        "parent": "bzcreu",
+        "children": [],
+        "settings": {
+          "text": "<p>{acf_step_tip}</p>"
+        }
+      },
+      {
+        "id": "hkkgge",
+        "name": "heading",
+        "parent": "zfmqqn",
+        "children": [],
+        "settings": {
+          "text": "Consiglio",
+          "tag": "h5"
+        }
+      },
+      {
+        "id": "wugeqj",
+        "name": "svg",
+        "parent": "zfmqqn",
+        "children": [],
+        "settings": {
+          "source": "code",
+          "code": "<svg width=\"18\" height=\"17\" viewBox=\"0 0 18 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 2.5C10.0286 5.27974 12.2203 7.4714 15 8.5C12.2203 9.5286 10.0286 11.7203 9 14.5C7.9714 11.7203 5.77974 9.5286 3 8.5C5.77974 7.4714 7.9714 5.27974 9 2.5Z\" stroke=\"#800031\" stroke-width=\"1.5\"/>\n</svg>\n",
+          "signature": "ba15a52320f1710af36998591e7091d1",
+          "user_id": 3,
+          "time": 1740311974
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "ugiqzv",
+        "name": "image-gallery",
+        "parent": "pwimbb",
+        "children": [],
+        "settings": {
+          "items": {
+            "useDynamicData": "{acf_step_step_gallery}",
+            "size": "medium"
+          },
+          "gutter:mobile_portrait": ".5rem",
+          "link": "lightbox",
+          "columns": "6",
+          "columns:tablet_portrait": "5",
+          "columns:mobile_landscape": "5",
+          "_cssCustom:mobile_portrait": "#brxe-ugiqzv li{\n  border-radius: .25rem;\n  overflow: hidden;\n}"
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "rwakun",
+        "name": "container",
+        "parent": "ysqsce",
+        "children": [
+          "ivfewd",
+          "kbkrce",
+          "oocfut"
+        ],
+        "settings": {
+          "_direction:mobile_portrait": "column",
+          "_alignItems:mobile_portrait": "flex-end"
+        }
+      },
+      {
+        "id": "ipbadz",
+        "name": "text-basic",
+        "parent": "pvuiwt",
+        "children": [],
+        "settings": {
+          "text": "{acf_ingredienti_main_titolo_subricetta}",
+          "_typography:mobile_portrait": {
+            "font-weight": "500"
+          }
+        },
+        "label": "Subricetta"
+      },
+      {
+        "id": "pvuiwt",
+        "name": "block",
+        "parent": "vtxnpc",
+        "children": [
+          "ipbadz"
+        ],
+        "settings": {
+          "_padding:mobile_portrait": {
+            "top": ".5rem",
+            "right": ".5rem",
+            "bottom": ".5rem",
+            "left": ".5rem"
+          },
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#ffffff",
+              "rgb": "rgba(255, 255, 255, 0.5)",
+              "hsl": "hsla(0, 0%, 100%, 0.5)",
+              "id": "njwewd",
+              "name": "White.50"
+            }
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "right": ".25rem",
+              "bottom": ".25rem",
+              "left": ".25rem"
+            }
+          },
+          "_conditions": [
+            [
+              {
+                "id": "lbjrtj",
+                "key": "dynamic_data",
+                "dynamic_data": "{acf_ingredienti_main_subricetta:value}",
+                "compare": "==",
+                "value": "1"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ezgngb",
+        "name": "block",
+        "parent": "zvuwic",
+        "children": [
+          "tyfnpl"
+        ],
+        "settings": {
+          "_padding:mobile_portrait": {
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0"
+          },
+          "_columnGap:mobile_portrait": ".5rem",
+          "_flexWrap:mobile_portrait": "nowrap",
+          "_cssGlobalClasses": [
+            "bhbfvw"
+          ],
+          "_gridTemplateColumns:mobile_portrait": "1fr 1fr 1fr",
+          "_direction:mobile_portrait": "row",
+          "_flexBasis:mobile_portrait": "30%",
+          "_display:mobile_portrait": "grid",
+          "_gridGap:mobile_portrait": ".5rem",
+          "_gridTemplateColumns:mobile_landscape": "repeat (5, 1fr)",
+          "_gridTemplateColumns": "repeat(6, 1fr)"
+        },
+        "label": "Video"
+      },
+      {
+        "id": "yfezlz",
+        "name": "image",
+        "parent": "tyfnpl",
+        "children": [],
+        "settings": {
+          "_aspectRatio:mobile_portrait": "1",
+          "popupOverlay:mobile_portrait": {
+            "hex": "#261119",
+            "id": "shaleu",
+            "name": "Primary.200.100"
+          },
+          "popupIcon": {
+            "library": "fontawesomeRegular",
+            "icon": "fa fa-circle-play"
+          },
+          "_objectFit:mobile_portrait": "cover",
+          "_cssGlobalClasses": [],
+          "image": {
+            "url": "https://i.ytimg.com/vi//sddefault.jpg",
+            "external": "https://i.ytimg.com/vi/{acf_step_videos_step_video_id}/sddefault.jpg",
+            "filename": "sddefault.jpg",
+            "imageUrlValid": true
+          }
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "tyfnpl",
+        "name": "div",
+        "parent": "ezgngb",
+        "children": [
+          "yfezlz"
+        ],
+        "settings": {
+          "hasLoop": true,
+          "query": {
+            "objectType": "acf_step_step_videos"
+          },
+          "_direction:mobile_portrait": "row",
+          "_justifyContent:mobile_portrait": "flex-start",
+          "tag": "a",
+          "link": {
+            "type": "lightboxVideo",
+            "lightboxVideo": "https://www.youtube.com/watch?v={acf_step_videos_step_video_id}"
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "right": ".25rem",
+              "bottom": ".25rem",
+              "left": ".25rem"
+            }
+          },
+          "_margin:mobile_portrait": {
+            "bottom": ".5rem"
+          },
+          "_overflow:mobile_portrait": "hidden"
+        }
+      },
+      {
+        "id": "ffquiv",
+        "name": "breadcrumbs",
+        "parent": "oxvjeh",
+        "children": [],
+        "settings": {
+          "_cssGlobalClasses": [
+            "xhmtcy",
+            "yeccbt"
+          ]
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "fthvji",
+        "name": "post-sharing",
+        "parent": "eszego",
+        "children": [],
+        "settings": {
+          "items": [
+            {
+              "service": "whatsapp",
+              "id": "cudooz"
+            },
+            {
+              "service": "facebook",
+              "id": "nzrygh"
+            },
+            {
+              "service": "twitter",
+              "id": "tvcood"
+            },
+            {
+              "service": "email",
+              "id": "mnkghs"
+            }
+          ],
+          "brandColors": true,
+          "_gap:mobile_portrait": ".5rem"
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "eszego",
+        "name": "block",
+        "parent": "oxvjeh",
+        "children": [
+          "pvyjis",
+          "fthvji"
+        ],
+        "settings": {
+          "_margin:mobile_portrait": {
+            "top": ".5rem",
+            "bottom": "1rem"
+          },
+          "_direction:mobile_portrait": "row",
+          "_justifyContent:mobile_portrait": "space-between",
+          "_alignItems:mobile_portrait": "center"
+        }
+      },
+      {
+        "id": "pvyjis",
+        "name": "heading",
+        "parent": "eszego",
+        "children": [],
+        "settings": {
+          "text": "Condividi",
+          "tag": "h6"
+        }
+      },
+      {
+        "id": "emnmqc",
+        "name": "image",
+        "parent": "zvuwic",
+        "children": [],
+        "settings": {
+          "image": {
+            "useDynamicData": "{acf_step_step_single_image}",
+            "size": "large"
+          },
+          "_aspectRatio:mobile_portrait": "3/2",
+          "_objectFit:mobile_portrait": "cover",
+          "_margin:mobile_portrait": {
+            "top": ".5rem",
+            "bottom": ".5rem"
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "right": ".25rem",
+              "bottom": ".25rem",
+              "left": ".25rem"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "bricks_template_archivi": {
+    "ID": 82,
+    "post_title": "Archivi",
+    "post_name": "archivi",
+    "post_type": "bricks_template",
+    "template_type": "archive",
+    "template_settings": {
+      "templateConditions": [
+        {
+          "id": "mekawd",
+          "main": "archiveType",
+          "archiveType": [
+            "any"
+          ]
+        }
+      ],
+      "templatePreviewType": "archive-term",
+      "templatePreviewTerm": "categoria-ricetta::13"
+    },
+    "bricks_content": [
+      {
+        "id": "pkvlch",
+        "name": "section",
+        "parent": 0,
+        "children": [
+          "tiuezt"
+        ],
+        "settings": []
+      },
+      {
+        "id": "ojywmm",
+        "name": "block",
+        "parent": "tiuezt",
+        "children": [
+          "wodmri",
+          "nyohrp"
+        ],
+        "settings": {
+          "_display": "flex",
+          "hasLoop": true,
+          "_margin:mobile_portrait": {
+            "bottom": "2rem"
+          },
+          "query": {
+            "no_results_text": "Ancora nessuna ricetta qui 🤷"
+          }
+        }
+      },
+      {
+        "id": "wodmri",
+        "name": "image",
+        "parent": "ojywmm",
+        "children": [],
+        "settings": {
+          "image": {
+            "useDynamicData": "{featured_image}",
+            "size": "1536x1536"
+          },
+          "_border": {
+            "radius": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            }
+          },
+          "link": "url",
+          "url": {
+            "type": "meta",
+            "useDynamicData": "{post_url}",
+            "title": "{post_title}"
+          },
+          "altText": "{post_title}",
+          "_aspectRatio:mobile_portrait": "3/2",
+          "_objectFit:mobile_portrait": "cover",
+          "caption": "none",
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "right": ".25rem",
+              "bottom": ".25rem",
+              "left": ".25rem"
+            }
+          }
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "tiuezt",
+        "name": "container",
+        "parent": "pkvlch",
+        "children": [
+          "qechfb",
+          "xasaer",
+          "ojywmm"
+        ],
+        "settings": []
+      },
+      {
+        "id": "rcwwpt",
+        "name": "post-title",
+        "parent": "xasaer",
+        "children": [],
+        "settings": {
+          "tag": "h1",
+          "_cssGlobalClasses": [
+            "tzeday"
+          ]
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "nyohrp",
+        "name": "heading",
+        "parent": "ojywmm",
+        "children": [],
+        "settings": {
+          "text": "{post_title}",
+          "tag": "h2",
+          "link": {
+            "type": "meta",
+            "useDynamicData": "{post_url}"
+          }
+        }
+      },
+      {
+        "id": "gfofdv",
+        "name": "text-basic",
+        "parent": "xasaer",
+        "children": [],
+        "settings": {
+          "text": "Tutte le ricette della categoria",
+          "_conditions": [
+            [
+              {
+                "id": "lwfbiu",
+                "key": "dynamic_data",
+                "dynamic_data": "{term_taxonomy_slug}",
+                "value": "categoria-ricetta"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "id": "qechfb",
+        "name": "breadcrumbs",
+        "parent": "tiuezt",
+        "children": [],
+        "settings": {
+          "_cssGlobalClasses": [
+            "xhmtcy"
+          ]
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "xasaer",
+        "name": "block",
+        "parent": "tiuezt",
+        "children": [
+          "gfofdv",
+          "glhxee",
+          "iimauv",
+          "rcwwpt"
+        ],
+        "settings": {
+          "_margin:mobile_portrait": {
+            "top": ".5rem",
+            "bottom": "1rem"
+          }
+        }
+      },
+      {
+        "id": "glhxee",
+        "name": "text-basic",
+        "parent": "xasaer",
+        "children": [],
+        "settings": {
+          "text": "Tutte le ricette che contengono",
+          "_conditions": [
+            [
+              {
+                "id": "uajtxv",
+                "key": "dynamic_data",
+                "dynamic_data": "{term_taxonomy_slug}",
+                "value": "ingrediente"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "id": "iimauv",
+        "name": "text-basic",
+        "parent": "xasaer",
+        "children": [],
+        "settings": {
+          "text": "Tutte le ricette classificate come",
+          "_conditions": [
+            [
+              {
+                "id": "uajtxv",
+                "key": "dynamic_data",
+                "dynamic_data": "{term_taxonomy_slug}",
+                "value": "indice-fit"
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "bricks_template_footer": {
+    "ID": 190,
+    "post_title": "Footer",
+    "post_name": "footer",
+    "post_type": "bricks_template",
+    "template_type": "footer",
+    "template_settings": {
+      "templatePreviewType": "archive-author",
+      "templatePreviewAuthor": "1"
+    },
+    "bricks_content": ""
+  },
+  "bricks_template_pagina": {
+    "ID": 1023,
+    "post_title": "Pagina",
+    "post_name": "pagina",
+    "post_type": "bricks_template",
+    "template_type": "content",
+    "template_settings": {
+      "templateConditions": [
+        {
+          "id": "jlpyhg",
+          "main": "postType",
+          "postType": [
+            "page"
+          ]
+        },
+        {
+          "id": "ljmskk",
+          "main": "frontpage",
+          "exclude": true
+        }
+      ]
+    },
+    "bricks_content": [
+      {
+        "id": "seyigf",
+        "name": "post-title",
+        "parent": "hpquwj",
+        "children": [],
+        "settings": {
+          "tag": "h1",
+          "_cssGlobalClasses": [
+            "tzeday"
+          ]
+        }
+      },
+      {
+        "id": "yhelad",
+        "name": "section",
+        "parent": 0,
+        "children": [
+          "hpquwj"
+        ],
+        "settings": []
+      },
+      {
+        "id": "hpquwj",
+        "name": "container",
+        "parent": "yhelad",
+        "children": [
+          "gxouco",
+          "seyigf",
+          "bqdbfw",
+          "moksvh"
+        ],
+        "settings": []
+      },
+      {
+        "id": "gxouco",
+        "name": "breadcrumbs",
+        "parent": "hpquwj",
+        "children": [],
+        "settings": {
+          "_cssGlobalClasses": [
+            "xhmtcy"
+          ]
+        }
+      },
+      {
+        "id": "moksvh",
+        "name": "post-content",
+        "parent": "hpquwj",
+        "children": [],
+        "settings": {
+          "dataSource": "bricks"
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "bqdbfw",
+        "name": "divider",
+        "parent": "hpquwj",
+        "children": [],
+        "settings": {
+          "height:mobile_portrait": "3",
+          "width:mobile_portrait": "10%",
+          "color:mobile_portrait": {
+            "hex": "#800031",
+            "id": "gkxbxv",
+            "name": "Primary.500.100"
+          },
+          "_margin:mobile_portrait": {
+            "top": ".5rem",
+            "bottom": "1rem"
+          }
+        }
+      }
+    ]
+  },
+  "page_home": {
+    "ID": 202,
+    "post_title": "Home",
+    "post_name": "home",
+    "post_type": "page",
+    "template_type": "content",
+    "template_settings": "",
+    "bricks_content": [
+      {
+        "id": "cqyiyh",
+        "name": "section",
+        "parent": 0,
+        "children": [
+          "rinxis"
+        ],
+        "settings": [],
+        "label": "Hero"
+      },
+      {
+        "id": "rinxis",
+        "name": "container",
+        "parent": "cqyiyh",
+        "children": [
+          "svnyiw",
+          "aqvkqt",
+          "ezjnyf",
+          "ppolfg"
+        ],
+        "settings": {
+          "_direction": "row",
+          "_flexWrap": "wrap",
+          "_justifyContent": "space-between"
+        }
+      },
+      {
+        "id": "akhdzs",
+        "name": "section",
+        "parent": 0,
+        "children": [
+          "vqnvco"
+        ],
+        "settings": [],
+        "label": "Last recipes"
+      },
+      {
+        "id": "vznacl",
+        "name": "section",
+        "parent": 0,
+        "children": [
+          "eyceca"
+        ],
+        "settings": []
+      },
+      {
+        "id": "eyceca",
+        "name": "container",
+        "parent": "vznacl",
+        "children": [
+          "ntyvhh",
+          "bhgpqr",
+          "vyyuns",
+          "vxknaa",
+          "avzesv",
+          "xkzunc",
+          "khzgwa",
+          "mmrxsy",
+          "hhkxxb"
+        ],
+        "settings": {
+          "_direction:mobile_portrait": "column"
+        },
+        "label": "Tag cloud"
+      },
+      {
+        "id": "biuook",
+        "name": "text-basic",
+        "parent": "xyeztd",
+        "children": [],
+        "settings": {
+          "text": "{term_name}",
+          "_cssGlobalClasses": [
+            "yeccbt",
+            "oqqsvq"
+          ],
+          "link": {
+            "type": "meta",
+            "useDynamicData": "{term_url}"
+          }
+        }
+      },
+      {
+        "id": "xyeztd",
+        "name": "div",
+        "parent": "avzesv",
+        "children": [
+          "biuook"
+        ],
+        "settings": {
+          "hasLoop": true,
+          "query": {
+            "objectType": "term",
+            "taxonomy": [
+              "ingrediente"
+            ],
+            "tax_query_not": [
+              "ingrediente::40",
+              "ingrediente::50",
+              "ingrediente::17",
+              "ingrediente::45",
+              "ingrediente::37",
+              "ingrediente::19",
+              "ingrediente::8",
+              "ingrediente::15",
+              "ingrediente::39",
+              "ingrediente::52",
+              "ingrediente::49"
+            ],
+            "number": "20"
+          },
+          "_padding:mobile_portrait": {
+            "top": ".25rem",
+            "right": ".5rem",
+            "bottom": ".25rem",
+            "left": ".5rem"
+          },
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#f288b1",
+              "rgb": "rgba(242, 136, 177, 0.2)",
+              "hsl": "hsla(337, 80%, 74%, 0.2)",
+              "id": "iztfzo",
+              "name": "Primary.900.20"
+            }
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "right": ".25rem",
+              "bottom": ".25rem",
+              "left": ".25rem"
+            }
+          }
+        }
+      },
+      {
+        "id": "ntyvhh",
+        "name": "heading",
+        "parent": "eyceca",
+        "children": [],
+        "settings": {
+          "text": "Cerchi ispirazione?",
+          "tag": "h2",
+          "_margin:mobile_portrait": {
+            "bottom": "1rem"
+          },
+          "_cssGlobalClasses": [
+            "tzeday"
+          ]
+        }
+      },
+      {
+        "id": "avzesv",
+        "name": "block",
+        "parent": "eyceca",
+        "children": [
+          "xyeztd"
+        ],
+        "settings": {
+          "_direction:mobile_portrait": "row",
+          "_columnGap:mobile_portrait": ".5rem",
+          "_margin:mobile_portrait": {
+            "bottom": "1rem"
+          },
+          "_rowGap:mobile_portrait": ".5rem",
+          "_flexWrap:mobile_portrait": "wrap"
+        }
+      },
+      {
+        "id": "khzgwa",
+        "name": "heading",
+        "parent": "eyceca",
+        "children": [],
+        "settings": {
+          "text": "Sei attentə alle linea?",
+          "tag": "h4",
+          "_margin:mobile_portrait": {
+            "bottom": ".5rem"
+          }
+        }
+      },
+      {
+        "id": "xkzunc",
+        "name": "divider",
+        "parent": "eyceca",
+        "children": [],
+        "settings": {
+          "color:mobile_portrait": {
+            "hex": "#800031",
+            "id": "gkxbxv",
+            "name": "Primary.500.100"
+          },
+          "height:mobile_portrait": "3",
+          "width:mobile_portrait": "30%",
+          "_margin:mobile_portrait": {
+            "top": "1rem",
+            "bottom": "1rem"
+          },
+          "width": "10%"
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "uefqat",
+        "name": "button",
+        "parent": "qnqaqo",
+        "children": [],
+        "settings": {
+          "size": "md",
+          "text": "{term_name}",
+          "link": {
+            "type": "meta",
+            "useDynamicData": "{term_url}"
+          }
+        }
+      },
+      {
+        "id": "qnqaqo",
+        "name": "div",
+        "parent": "vyyuns",
+        "children": [
+          "uefqat"
+        ],
+        "settings": {
+          "hasLoop": true,
+          "query": {
+            "objectType": "term",
+            "taxonomy": [
+              "categoria-ricetta"
+            ],
+            "show_empty": true
+          }
+        }
+      },
+      {
+        "id": "vyyuns",
+        "name": "block",
+        "parent": "eyceca",
+        "children": [
+          "qnqaqo"
+        ],
+        "settings": {
+          "_direction:mobile_portrait": "row",
+          "_columnGap:mobile_portrait": ".5rem",
+          "_margin:mobile_portrait": {
+            "bottom": "1rem"
+          }
+        }
+      },
+      {
+        "id": "svnyiw",
+        "name": "heading",
+        "parent": "rinxis",
+        "children": [],
+        "settings": {
+          "text": "Raccogliamo ricette fantastiche con un'interfaccia usabile e senza noiose pubblicità",
+          "_cssGlobalClasses": [
+            "tzeday"
+          ],
+          "tag": "h1",
+          "type": "hero",
+          "_cssCustom:mobile_portrait": "#brxe-svnyiw{\n  text-wrap: balance;\n}",
+          "_margin:mobile_portrait": {
+            "bottom": "1rem"
+          }
+        }
+      },
+      {
+        "id": "lxlttk",
+        "name": "counter",
+        "parent": "ezjnyf",
+        "children": [],
+        "settings": {
+          "countTo": "{query_results_count:aqvkqt}",
+          "_cssGlobalClasses": [],
+          "prefix": "Abbiamo pubblicato ",
+          "suffix": " ricette comode da leggere.<br>Siamo agli inizi 😃",
+          "_margin:mobile_portrait": {
+            "bottom": "1rem"
+          }
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "bhgpqr",
+        "name": "heading",
+        "parent": "eyceca",
+        "children": [],
+        "settings": {
+          "text": "Sfoglia le categorie...",
+          "tag": "h4",
+          "_margin:mobile_portrait": {
+            "bottom": ".5rem"
+          }
+        }
+      },
+      {
+        "id": "aqvkqt",
+        "name": "div",
+        "parent": "rinxis",
+        "children": [],
+        "settings": {
+          "_margin:mobile_portrait": {
+            "bottom": "2rem",
+            "top": "2rem"
+          },
+          "hasLoop": true,
+          "query": {
+            "post_type": [
+              "ricetta"
+            ],
+            "posts_per_page": "-1"
+          },
+          "_display:mobile_portrait": "none"
+        }
+      },
+      {
+        "id": "hhkxxb",
+        "name": "block",
+        "parent": "eyceca",
+        "children": [
+          "ucvget"
+        ],
+        "settings": {
+          "_direction:mobile_portrait": "row",
+          "_columnGap:mobile_portrait": ".5rem",
+          "_rowGap:mobile_portrait": ".5rem",
+          "_flexWrap:mobile_portrait": "wrap"
+        }
+      },
+      {
+        "id": "ucvget",
+        "name": "div",
+        "parent": "hhkxxb",
+        "children": [
+          "xnpavw"
+        ],
+        "settings": {
+          "hasLoop": true,
+          "_padding:mobile_portrait": {
+            "top": ".25rem",
+            "right": ".5rem",
+            "bottom": ".25rem",
+            "left": ".5rem"
+          },
+          "_background:mobile_portrait": {
+            "color": {
+              "hex": "#f288b1",
+              "rgb": "rgba(242, 136, 177, 0.2)",
+              "hsl": "hsla(337, 80%, 74%, 0.2)",
+              "id": "iztfzo",
+              "name": "Primary.900.20"
+            }
+          },
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "right": ".25rem",
+              "bottom": ".25rem",
+              "left": ".25rem"
+            }
+          },
+          "query": {
+            "objectType": "term",
+            "taxonomy": [
+              "indice-fit"
+            ],
+            "show_empty": true
+          }
+        }
+      },
+      {
+        "id": "xnpavw",
+        "name": "text-basic",
+        "parent": "ucvget",
+        "children": [],
+        "settings": {
+          "text": "{term_name}",
+          "_cssGlobalClasses": [
+            "yeccbt",
+            "oqqsvq"
+          ],
+          "link": {
+            "type": "meta",
+            "useDynamicData": "{term_url}"
+          }
+        }
+      },
+      {
+        "id": "vxknaa",
+        "name": "heading",
+        "parent": "eyceca",
+        "children": [],
+        "settings": {
+          "text": "...oppure parti da un ingrediente",
+          "tag": "h4",
+          "_margin:mobile_portrait": {
+            "bottom": ".5rem"
+          }
+        }
+      },
+      {
+        "id": "ppolfg",
+        "name": "divider",
+        "parent": "rinxis",
+        "children": [],
+        "settings": {
+          "color:mobile_portrait": {
+            "hex": "#800031",
+            "id": "gkxbxv",
+            "name": "Primary.500.100"
+          },
+          "height:mobile_portrait": "3",
+          "width:mobile_portrait": "30%",
+          "height": "10%"
+        }
+      },
+      {
+        "id": "vqnvco",
+        "name": "container",
+        "parent": "akhdzs",
+        "children": [
+          "agmqto",
+          "krzxac",
+          "eavnmu"
+        ],
+        "settings": {
+          "_direction": "row",
+          "_flexWrap": "wrap",
+          "_justifyContent": "space-between"
+        }
+      },
+      {
+        "id": "agmqto",
+        "name": "heading",
+        "parent": "vqnvco",
+        "children": [],
+        "settings": {
+          "text": "Ultime ricette pubblicate",
+          "_cssGlobalClasses": [
+            "tzeday"
+          ],
+          "tag": "h2",
+          "_margin:mobile_portrait": {
+            "bottom": ".25rem"
+          }
+        }
+      },
+      {
+        "id": "eavnmu",
+        "name": "divider",
+        "parent": "vqnvco",
+        "children": [],
+        "settings": {
+          "color:mobile_portrait": {
+            "hex": "#800031",
+            "id": "gkxbxv",
+            "name": "Primary.500.100"
+          },
+          "height:mobile_portrait": "3",
+          "width:mobile_portrait": "30%",
+          "_margin:mobile_portrait": {
+            "top": "1rem"
+          },
+          "width": "10%"
+        }
+      },
+      {
+        "id": "krzxac",
+        "name": "block",
+        "parent": "vqnvco",
+        "children": [
+          "qkxknw",
+          "wowtnw"
+        ],
+        "settings": {
+          "hasLoop": true,
+          "query": {
+            "objectType": "post",
+            "post_type": [
+              "ricetta"
+            ],
+            "posts_per_page": "5"
+          },
+          "_margin:mobile_portrait": {
+            "bottom": "1.5rem"
+          }
+        },
+        "label": "Loop last recipes"
+      },
+      {
+        "id": "qkxknw",
+        "name": "image",
+        "parent": "krzxac",
+        "children": [],
+        "settings": {
+          "image": {
+            "useDynamicData": "{featured_image}",
+            "size": "medium_large"
+          },
+          "link": "url",
+          "url": {
+            "type": "meta",
+            "useDynamicData": "{post_url}"
+          },
+          "_aspectRatio:mobile_portrait": "3/2",
+          "_objectFit:mobile_portrait": "cover",
+          "caption": "none",
+          "_border:mobile_portrait": {
+            "radius": {
+              "top": ".25rem",
+              "right": ".25rem",
+              "bottom": ".25rem",
+              "left": ".25rem"
+            }
+          },
+          "_overflow:mobile_portrait": "hidden",
+          "_margin:mobile_portrait": {
+            "bottom": ".5rem"
+          }
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "wowtnw",
+        "name": "post-title",
+        "parent": "krzxac",
+        "children": [],
+        "settings": {
+          "tag": "h3",
+          "linkToPost": true
+        },
+        "themeStyles": []
+      },
+      {
+        "id": "mmrxsy",
+        "name": "text-basic",
+        "parent": "eyceca",
+        "children": [],
+        "settings": {
+          "text": "Forse sei nel posto sbagliato, ma puoi scegliere in base ad una scala <em>fit</em>",
+          "_cssCustom:mobile_portrait": "#brxe-mmrxsy{\n  text-wrap: balance;\n}",
+          "_margin:mobile_portrait": {
+            "bottom": ".5rem"
+          }
+        }
+      },
+      {
+        "id": "ezjnyf",
+        "name": "div",
+        "parent": "rinxis",
+        "children": [
+          "lxlttk"
+        ],
+        "settings": {
+          "tag": "custom",
+          "customTag": "h2",
+          "_typography:mobile_portrait": {
+            "color": {
+              "hex": "#413b3d",
+              "id": "fcaujf",
+              "name": "Text"
+            },
+            "font-size": "0.875rem",
+            "font-family": "Noto Sans",
+            "letter-spacing": "0"
+          },
+          "_cssGlobalClasses": []
+        }
+      }
+    ]
+  },
+  "page_about": {
+    "ID": 980,
+    "post_title": "About",
+    "post_name": "about",
+    "post_type": "page",
+    "template_type": "content",
+    "template_settings": "",
+    "bricks_content": [
+      {
+        "id": "mkkrwm",
+        "name": "text",
+        "parent": 0,
+        "children": [],
+        "settings": {
+          "text": "<p>Un altro sito di ricette. Ma ce n'era proprio bisogno? Forse.</p><p>Pochi semplici princìpi hanno mi hanno spinto alla creazione di questo progetto. Per cominciare, la volontà di avere un posto dove raccolgo le mie ricette preferite, che posso consultare in estrema <strong>comodità</strong> (dal mio punto di vista, si intende): nessuna interferenze pubblicitaria, nessun popup da chiudere, nessuna <em>X</em> da cliccare ogni 10 secondi. Ho provato a integrare alcune chicche che migliorano l'esperienza d'uso: ingredienti sempre accessibili e specificati per ogni step, la possibilità di tenere lo schermo attivo con un click ed altre funzioanlità che arriveranno quando... ne avvertirò la mancanza. 😃</p><p>In secondo piano c'è la voglia di <strong>conservare</strong> e <strong>digitalizzare</strong>, alcune ricette storiche della mia famiglia: non le migliori o le più introvabili semplicemente le mie. Intime ma pronte ad essere condivise. ❤️‍🔥</p><p>Infine la dimensione sperimentale  di un progetto personale, in cui testare aspetti funzionali e tecnici del mio (vero) lavoro. 🧐</p><h2>Aperto al mondo</h2><p>Attraverso il modulo in questa pagina è possibile richiedermi di inserire la propa ricetta affinché possa essere consultata in maniera comoda, replicando ciò che avviene per me per chiunque lo desidera. 🙌</p>"
+        }
+      },
+      {
+        "id": "whycrw",
+        "name": "block",
+        "parent": 0,
+        "children": [
+          "fyvjaz",
+          "ptlfmb"
+        ],
+        "settings": {
+          "_direction:mobile_portrait": "row",
+          "_alignItems:mobile_portrait": "center",
+          "_columnGap:mobile_portrait": "1rem",
+          "_margin:mobile_portrait": {
+            "top": "1.5rem",
+            "bottom": ".5rem"
+          },
+          "_flexWrap:mobile_portrait": "nowrap"
+        }
+      },
+      {
+        "id": "fyvjaz",
+        "name": "image",
+        "parent": "whycrw",
+        "children": [],
+        "settings": {
+          "image": {
+            "id": 1054,
+            "filename": "antonio-casolino.png",
+            "size": "full",
+            "full": "https://micimetto.acasolino.com/wp-content/uploads/2025/03/antonio-casolino.png",
+            "url": "https://micimetto.acasolino.com/wp-content/uploads/2025/03/antonio-casolino.png"
+          },
+          "_widthMax:mobile_portrait": "25vw",
+          "_widthMax:mobile_landscape": "20vw",
+          "_widthMax:tablet_portrait": "20vw",
+          "_widthMax": "10vw"
+        }
+      },
+      {
+        "id": "dekgvo",
+        "name": "text",
+        "parent": "ehcwgv",
+        "children": [],
+        "settings": {
+          "text": "<p><a href=\"https://www.linkedin.com/in/antoniocasolino/\" target=\"_blank\" rel=\"noopener\"><strong>Antonio Casolino</strong></a></p>",
+          "_typography:mobile_portrait": {
+            "font-size": "12px",
+            "line-height": "1.2"
+          },
+          "_typography": {
+            "font-size": "16px"
+          }
+        }
+      },
+      {
+        "id": "fzimfp",
+        "name": "text",
+        "parent": "ptlfmb",
+        "children": [],
+        "settings": {
+          "text": "<p><em>Mi occupo di comunicazione digitale da circa 15 anni, come digital designer (graphic, UI) e project manager in ambito sviluppo software con particolare focus su frontend, WordPress e Low Code.</em></p>",
+          "_typography:mobile_portrait": {
+            "font-size": "12px",
+            "line-height": "1.2"
+          },
+          "_cssCustom:mobile_portrait": "#brxe-fzimfp {\n  text-wrap: balance;\n}",
+          "_typography": {
+            "font-size": "14px"
+          }
+        }
+      },
+      {
+        "id": "ptlfmb",
+        "name": "div",
+        "parent": "whycrw",
+        "children": [
+          "ehcwgv",
+          "manyat",
+          "fzimfp"
+        ],
+        "settings": {
+          "_display:mobile_portrait": "flex",
+          "_direction:mobile_portrait": "column"
+        }
+      },
+      {
+        "id": "ehcwgv",
+        "name": "div",
+        "parent": "ptlfmb",
+        "children": [
+          "dekgvo",
+          "hqgahq"
+        ],
+        "settings": {
+          "_display:mobile_portrait": "flex",
+          "_direction:mobile_portrait": "row",
+          "_justifyContent:mobile_portrait": "space-between",
+          "_alignItems:mobile_portrait": "center"
+        }
+      },
+      {
+        "id": "hqgahq",
+        "name": "icon",
+        "parent": "ehcwgv",
+        "children": [],
+        "settings": {
+          "icon": {
+            "library": "fontawesomeBrands",
+            "icon": "fab fa-linkedin"
+          },
+          "iconSize:mobile_portrait": "20px",
+          "iconColor:mobile_portrait": {
+            "hex": "#0966c2"
+          },
+          "link": {
+            "type": "external",
+            "url": "https://www.linkedin.com/in/antoniocasolino/",
+            "newTab": true
+          }
+        }
+      },
+      {
+        "id": "manyat",
+        "name": "divider",
+        "parent": "ptlfmb",
+        "children": [],
+        "settings": {
+          "_margin:mobile_portrait": {
+            "top": ".5rem",
+            "bottom": ".5rem"
+          },
+          "width:mobile_portrait": "10vw",
+          "height:mobile_portrait": "3",
+          "color:mobile_portrait": {
+            "hex": "#800031",
+            "id": "gkxbxv",
+            "name": "Primary.500.100"
+          },
+          "width": "3vw"
+        }
+      }
+    ]
+  },
+  "page_contatti": {
+    "ID": 982,
+    "post_title": "Contatti",
+    "post_name": "contatti",
+    "post_type": "page",
+    "template_type": "content",
+    "template_settings": "",
+    "bricks_content": [
+      {
+        "id": "xnlpsl",
+        "name": "text",
+        "parent": 0,
+        "children": [],
+        "settings": {
+          "text": "<p>Per qualsiasi informazione puoi scrivermi.<br />Anche solo per  un saluto. 🤗</p>",
+          "_margin:mobile_portrait": {
+            "bottom": "1rem"
+          }
+        }
+      },
+      {
+        "id": "hbywoz",
+        "name": "form",
+        "parent": 0,
+        "children": [],
+        "settings": {
+          "fields": [
+            {
+              "type": "text",
+              "label": "Nome",
+              "placeholder": "Il tuo nome",
+              "id": "cbb224",
+              "required": true
+            },
+            {
+              "type": "email",
+              "label": "Email",
+              "placeholder": "Email",
+              "required": true,
+              "id": "c5a159"
+            },
+            {
+              "type": "textarea",
+              "label": "Messaggio",
+              "placeholder": "Messaggio",
+              "required": true,
+              "id": "9fc02b"
+            }
+          ],
+          "actions": [
+            "email"
+          ],
+          "successMessage": "Messaggio correttamente inviato. Grazie.",
+          "emailSubject": "Micimetto - Form Contatti",
+          "emailTo": "admin_email",
+          "fromName": "Mi ci metto",
+          "htmlEmail": true,
+          "mailchimpPendingMessage": "Please check your email to confirm your subscription.",
+          "mailchimpErrorMessage": "Sorry, but we could not subscribe you.",
+          "sendgridErrorMessage": "Sorry, but we could not subscribe you.",
+          "requiredAsterisk": true,
+          "showLabels": true,
+          "submitButtonSize": "lg",
+          "emailContent": "{{all_fields}}",
+          "emailErrorMessage": "Invio non riuscito. Ricarica la pagina e prova a inviare nuovamente il modulo.",
+          "enableTurnstile": true
+        }
+      }
+    ]
+  },
+  "page_invia-la-tua-ricetta": {
+    "ID": 984,
+    "post_title": "Invia la tua ricetta",
+    "post_name": "invia-la-tua-ricetta",
+    "post_type": "page",
+    "template_type": "content",
+    "template_settings": "",
+    "bricks_content": [
+      {
+        "id": "jrvxmt",
+        "name": "form",
+        "parent": 0,
+        "children": [],
+        "settings": {
+          "fields": [
+            {
+              "type": "text",
+              "label": "Nome",
+              "placeholder": "Il tuo nome",
+              "id": "0c131a",
+              "required": true
+            },
+            {
+              "type": "email",
+              "label": "Email",
+              "placeholder": "La tua email",
+              "required": true,
+              "id": "4e5339"
+            },
+            {
+              "type": "text",
+              "label": "Titolo ricetta",
+              "placeholder": "Titolo ricetta",
+              "id": "cjvfcy",
+              "required": true
+            },
+            {
+              "type": "textarea",
+              "label": "Ingredienti",
+              "placeholder": "Ingredienti",
+              "required": true,
+              "id": "aa61d0",
+              "height:mobile_portrait": "300"
+            },
+            {
+              "type": "textarea",
+              "label": "Procedimento",
+              "placeholder": "Procedimento ricetta",
+              "required": true,
+              "id": "thxmqq",
+              "height:mobile_portrait": "500"
+            }
+          ],
+          "actions": [
+            "email"
+          ],
+          "successMessage": "Ricetta inviata correttamente. Grazie.",
+          "emailTo": "admin_email",
+          "fromName": "Mi ci metto",
+          "emailErrorMessage": "Invio non riuscito. Ricarica la pagina e prova a inviare nuovamente il modulo.",
+          "htmlEmail": true,
+          "mailchimpPendingMessage": "Please check your email to confirm your subscription.",
+          "mailchimpErrorMessage": "Sorry, but we could not subscribe you.",
+          "sendgridErrorMessage": "Sorry, but we could not subscribe you.",
+          "requiredAsterisk": true,
+          "showLabels": true,
+          "enableTurnstile": true,
+          "submitButtonText": "Invia ricetta",
+          "submitButtonSize": "xl",
+          "submitButtonWidth:mobile_portrait": "100",
+          "emailSubject": "Micimetto - Nuova ricetta inviata",
+          "emailContent": "{{all_fields}}"
+        }
+      }
+    ]
+  }
+}
