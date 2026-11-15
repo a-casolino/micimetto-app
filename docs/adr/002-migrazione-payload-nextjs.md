@@ -3,7 +3,7 @@
 - **Stato:** Approvato
 - **Data:** 15 Novembre 2026
 - **Decisori:** Antonio Casolino
-- **Supera:** [ADR-001 — Strategia di Refactoring su WordPress + Bricks (xCloud)](https://github.com/a-casolino/micimetto/blob/main/docs/adr/001-strategia-refactoring-wp.md)
+- **Supera:** [ADR-001 — Strategia di Refactoring su WordPress + Bricks (xCloud)](../riferimento/adr-001-strategia-refactoring-wp.md)
 
 ---
 
@@ -11,7 +11,7 @@
 
 L'ADR-001 (14 Novembre 2026) aveva deciso di mantenere **WordPress + Bricks Builder + ACF PRO** su xCloud, rifattorizzando il tema `bricks-child`, e aveva scartato sia la migrazione completa a uno stack Next.js/Astro sia l'architettura headless.
 
-L'audit, le specifiche funzionali, il Design System e il modello dati ACF restano documentati nel repository [`a-casolino/micimetto`](https://github.com/a-casolino/micimetto), che rimane il riferimento per il sito live `micimetto.acasolino.com`.
+L'audit, le specifiche funzionali, il Design System e il modello dati ACF restano documentati nel repository [`a-casolino/micimetto`](https://github.com/a-casolino/micimetto), ora archiviato. I documenti ancora validi sono stati copiati in [`docs/riferimento/`](../riferimento/).
 
 Le funzionalità previste per il refactoring (ricalcolo porzioni, ricerca live e filtro "Svuotafrigo" multi-ingrediente, timer negli step, Screen Wake Lock, Cooking Mode, JSON-LD `Schema.org/Recipe`) sono in gran parte logica applicativa interattiva lato client, più naturale da sviluppare, tipizzare e testare in un'applicazione React che in script aggiunti a template Bricks.
 
@@ -23,14 +23,14 @@ Il refactoring di **Mi ci metto** prosegue come nuova applicazione nel repositor
 - **Next.js** (App Router) + **React** per il frontend pubblico;
 - **PostgreSQL** come database (`@payloadcms/db-postgres`, con migrazioni versionate in `src/migrations/`).
 
-Il repository `micimetto` (WordPress) non viene più evoluto con i moduli della Fase 3–5 della sua roadmap: resta come documentazione di contesto e come fonte dei contenuti da migrare.
+Il repository `micimetto` (WordPress) viene archiviato: i moduli delle Fasi 3–5 della sua roadmap non vengono sviluppati su WordPress. Il sito WordPress resta la fonte dei contenuti da migrare.
 
 ## Cosa resta valido dei documenti precedenti
 
 - **Obiettivo di prodotto:** ricettario pulito, senza pubblicità, pensato per l'uso in cucina da smartphone/tablet.
-- **Modello dati:** la collection `ricette` e le tassonomie `ingredienti`, `categorie`, `indici-fit`, `occasioni` ricalcano il modello ACF (`tempo`, `cottura`, `difficolta`, `valutazione`, `dosi_per`, gruppi di ingredienti con sotto-ricette, step con ingredienti/quantità, tip, immagini, gallery e video).
-- **Specifiche funzionali** (`micimetto/docs/04-specifiche-funzionali.md`) e **Design System** (`micimetto/docs/03-design-system.md`: Bordeaux `#77002e`, Rosa `#fce8ef`/`#f4c2d7`, `Sora` + `Noto Sans`, WCAG AA).
-- **Lezioni dall'audit** (`micimetto/docs/01-audit-stato-attuale.md`): niente errori JS su pagine non-ricetta, archivio `/ricette/` funzionante, ricerca visibile, JSON-LD + Open Graph, link Privacy/Cookie e consenso GDPR nei form.
+- **Modello dati** ([`docs/riferimento/02-architettura-e-stack.md`](../riferimento/02-architettura-e-stack.md)): la collection `ricette` e le tassonomie `ingredienti`, `categorie`, `indici-fit`, `occasioni` ricalcano il modello ACF (`tempo`, `cottura`, `difficolta`, `valutazione`, `dosi_per`, gruppi di ingredienti con sotto-ricette, step con ingredienti/quantità, tip, immagini, gallery e video).
+- **Specifiche funzionali** ([`docs/riferimento/04-specifiche-funzionali.md`](../riferimento/04-specifiche-funzionali.md)) e **Design System** ([`docs/riferimento/03-design-system.md`](../riferimento/03-design-system.md): Bordeaux `#77002e`, Rosa `#fce8ef`/`#f4c2d7`, `Sora` + `Noto Sans`, WCAG AA).
+- **Lezioni dall'audit** ([`docs/riferimento/01-audit-stato-attuale.md`](../riferimento/01-audit-stato-attuale.md)): niente errori JS su pagine non-ricetta, archivio `/ricette/` funzionante, ricerca visibile, JSON-LD + Open Graph, link Privacy/Cookie e consenso GDPR nei form.
 
 ## Conseguenze
 
