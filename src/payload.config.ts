@@ -12,6 +12,7 @@ import { Media } from './collections/Media'
 import { Occasioni } from './collections/Occasioni'
 import { Ricette } from './collections/Ricette'
 import { Users } from './collections/Users'
+import { migrations } from './migrations'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -33,10 +34,7 @@ export default buildConfig({
     pool: {
       connectionString: process.env.DATABASE_URL || '',
     },
-    // Dev pushes the schema automatically. Production does not, so the first
-    // boot of an empty database has to create the tables itself. Switch to
-    // committed migrations before this database holds real recipes.
-    push: true,
+    prodMigrations: migrations,
   }),
   sharp,
   plugins: [],
