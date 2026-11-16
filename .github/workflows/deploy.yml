@@ -1,6 +1,7 @@
 # Avvia il deploy su xCloud solo per i push su main.
 # Sostituisce il webhook GitHub di xCloud, che partiva a ogni push su qualsiasi branch.
-# Richiede il secret XCLOUD_DEPLOY_URL (URL "Push to Deploy" del sito su xCloud).
+# Richiede il secret XCLOUD_API_TOKEN (xCloud → Settings → Developers → API Tokens,
+# permessi read:sites + write:sites).
 name: Deploy su xCloud
 
 on:
@@ -16,16 +17,26 @@ concurrency:
   group: xcloud-deploy
   cancel-in-progress: false
 
+env:
+  XCLOUD_API_BASE: https://app.xcloud.host/api/v1
+  # Sito micimetto.1wp.site sul server Aruba
+  XCLOUD_SITE_UUID: 88581218-db28-45f8-8bcb-c1c132a4418a
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Avvia il deploy
         env:
-          XCLOUD_DEPLOY_URL: ${{ secrets.XCLOUD_DEPLOY_URL }}
+          XCLOUD_API_TOKEN: ${{ secrets.XCLOUD_API_TOKEN }}
         run: |
-          if [ -z "$XCLOUD_DEPLOY_URL" ]; then
-            echo "::error::Manca il secret XCLOUD_DEPLOY_URL"
+          if [ -z "$XCLOUD_API_TOKEN" ]; then
+            echo "::error::Manca il secret XCLOUD_API_TOKEN"
             exit 1
           fi
-          curl --fail-with-body -sS "$XCLOUD_DEPLOY_URL"
+          curl --fail-with-body -sS -X POST \
+            -H "Authorization: Bearer $XCLOUD_API_TOKEN" \
+            -H 'Accept: application/json' \
+            -H 'Content-Type: application/json' \
+            "$XCLOUD_API_BASE/sites/$XCLOUD_SITE_UUID/git/deploy" \
+            --data '{"confirm": true}'
