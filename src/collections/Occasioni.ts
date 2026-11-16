@@ -4,4 +4,5 @@ export const Occasioni = taxonomy({
   slug: 'occasioni',
   singular: 'Occasione',
   plural: 'Occasioni',
+  hierarchical: true,
 })

@@ -61,22 +61,6 @@ export type SupportedTimezones =
   | 'Pacific/Auckland'
   | 'Pacific/Fiji';
 
-export interface Ingredienti {
-  id: string
-}
-export interface Categorie {
-  id: string
-}
-export interface IndiciFit {
-  id: string
-}
-export interface Occasioni {
-  id: string
-}
-export interface Ricette {
-  id: string
-}
-
 export interface Config {
   auth: {
     users: UserAuthOperations;
@@ -85,6 +69,7 @@ export interface Config {
   collections: {
     users: User;
     media: Media;
+    video: Video;
     ingredienti: Ingredienti;
     categorie: Categorie;
     'indici-fit': IndiciFit;
@@ -99,13 +84,19 @@ export interface Config {
   collectionsSelect: {
     users: UsersSelect<false> | UsersSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    video: VideoSelect<false> | VideoSelect<true>;
+    ingredienti: IngredientiSelect<false> | IngredientiSelect<true>;
+    categorie: CategorieSelect<false> | CategorieSelect<true>;
+    'indici-fit': IndiciFitSelect<false> | IndiciFitSelect<true>;
+    occasioni: OccasioniSelect<false> | OccasioniSelect<true>;
+    ricette: RicetteSelect<false> | RicetteSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
   db: {
-    defaultIDType: string;
+    defaultIDType: number;
   };
   fallbackLocale: null;
   globals: {};
@@ -143,7 +134,8 @@ export interface UserAuthOperations {
  * via the `definition` "users".
  */
 export interface User {
-  id: string;
+  id: number;
+  ruolo: 'admin' | 'editor';
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -169,8 +161,12 @@ export interface User {
  * via the `definition` "media".
  */
 export interface Media {
-  id: string;
+  id: number;
+  /**
+   * Cosa si vede nella foto, per chi usa un lettore di schermo.
+   */
   alt: string;
+  didascalia?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -182,13 +178,389 @@ export interface Media {
   height?: number | null;
   focalX?: number | null;
   focalY?: number | null;
+  sizes?: {
+    card?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    step?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    hero?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    og?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+  };
+}
+/**
+ * Video ospitati su Bunny Stream. Carica il file su Bunny, poi incolla qui il suo Video ID: durata, formato e anteprima vengono letti in automatico.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "video".
+ */
+export interface Video {
+  id: number;
+  /**
+   * Se vuoto si usa il titolo che il video ha su Bunny.
+   */
+  titolo?: string | null;
+  /**
+   * Il GUID del video (Bunny → Stream → libreria → video → Video ID).
+   */
+  bunnyId: string;
+  stato?:
+    ('creato' | 'caricato' | 'in-elaborazione' | 'in-codifica' | 'pronto' | 'errore' | 'caricamento-fallito') | null;
+  risincronizza?: boolean | null;
+  sincronizzatoIl?: string | null;
+  durata?: number | null;
+  larghezza?: number | null;
+  altezza?: number | null;
+  anteprima?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ingredienti".
+ */
+export interface Ingredienti {
+  id: number;
+  nome: string;
+  /**
+   * When enabled, the slug will auto-generate from the title field on save and autosave.
+   */
+  generateSlug?: boolean | null;
+  slug: string;
+  /**
+   * Per il ricalcolo delle porzioni: «uova» se il nome è «uovo». Vuoto se non cambia.
+   */
+  plurale?: string | null;
+  /**
+   * Testo introduttivo e meta description della pagina d'archivio.
+   */
+  descrizione?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "categorie".
+ */
+export interface Categorie {
+  id: number;
+  nome: string;
+  /**
+   * When enabled, the slug will auto-generate from the title field on save and autosave.
+   */
+  generateSlug?: boolean | null;
+  slug: string;
+  parent?: (number | null) | Categorie;
+  /**
+   * Testo introduttivo e meta description della pagina d'archivio.
+   */
+  descrizione?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "indici-fit".
+ */
+export interface IndiciFit {
+  id: number;
+  nome: string;
+  /**
+   * When enabled, the slug will auto-generate from the title field on save and autosave.
+   */
+  generateSlug?: boolean | null;
+  slug: string;
+  parent?: (number | null) | IndiciFit;
+  /**
+   * Testo introduttivo e meta description della pagina d'archivio.
+   */
+  descrizione?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "occasioni".
+ */
+export interface Occasioni {
+  id: number;
+  nome: string;
+  /**
+   * When enabled, the slug will auto-generate from the title field on save and autosave.
+   */
+  generateSlug?: boolean | null;
+  slug: string;
+  parent?: (number | null) | Occasioni;
+  /**
+   * Testo introduttivo e meta description della pagina d'archivio.
+   */
+  descrizione?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ricette".
+ */
+export interface Ricette {
+  id: number;
+  titolo: string;
+  /**
+   * When enabled, the slug will auto-generate from the title field on save and autosave.
+   */
+  generateSlug?: boolean | null;
+  slug: string;
+  immagine?: (number | null) | Media;
+  /**
+   * Una o due frasi per le schede, la ricerca e i risultati di Google (JSON-LD description).
+   */
+  descrizione?: string | null;
+  introduzione?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  tempo?: number | null;
+  cottura?: number | null;
+  /**
+   * Lievitazione, frigo… Non entra nel tempo totale.
+   */
+  riposo?: number | null;
+  difficolta?: number | null;
+  valutazione?: number | null;
+  /**
+   * Le quantità sono riferite a questo numero.
+   */
+  dosiPer: number;
+  /**
+   * «persone», «biscotti», «tortiera da 24 cm»…
+   */
+  dosiUnita?: string | null;
+  /**
+   * Un solo gruppo senza titolo per le ricette semplici; più gruppi per le sotto-ricette («Per l’impasto», «Per la crema»).
+   */
+  gruppiIngredienti?:
+    | {
+        titolo?: string | null;
+        righe?:
+          | {
+              ingrediente: number | Ingredienti;
+              facoltativo?: boolean | null;
+              /**
+               * Vuota per «q.b.», «un pizzico»…
+               */
+              quantita?: number | null;
+              /**
+               * Vuota per un conteggio: «2» uova.
+               */
+              unita?:
+                | (
+                    | 'g'
+                    | 'kg'
+                    | 'ml'
+                    | 'cl'
+                    | 'l'
+                    | 'cucchiaio'
+                    | 'cucchiaino'
+                    | 'tazza'
+                    | 'bicchiere'
+                    | 'pezzo'
+                    | 'spicchio'
+                    | 'fetta'
+                    | 'foglia'
+                    | 'rametto'
+                    | 'mazzetto'
+                    | 'bustina'
+                    | 'confezione'
+                    | 'vasetto'
+                    | 'noce'
+                    | 'pizzico'
+                  )
+                | null;
+              /**
+               * «q.b.», «a temperatura ambiente», «circa». Non viene ricalcolata.
+               */
+              nota?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  step?:
+    | {
+        /**
+         * Facoltativo, per la Modalità Cucina e il JSON-LD (HowToStep name).
+         */
+        titolo?: string | null;
+        ingredienti?:
+          | {
+              ingrediente: number | Ingredienti;
+              /**
+               * Vuota per «q.b.», «un pizzico»…
+               */
+              quantita?: number | null;
+              /**
+               * Vuota per un conteggio: «2» uova.
+               */
+              unita?:
+                | (
+                    | 'g'
+                    | 'kg'
+                    | 'ml'
+                    | 'cl'
+                    | 'l'
+                    | 'cucchiaio'
+                    | 'cucchiaino'
+                    | 'tazza'
+                    | 'bicchiere'
+                    | 'pezzo'
+                    | 'spicchio'
+                    | 'fetta'
+                    | 'foglia'
+                    | 'rametto'
+                    | 'mazzetto'
+                    | 'bustina'
+                    | 'confezione'
+                    | 'vasetto'
+                    | 'noce'
+                    | 'pizzico'
+                  )
+                | null;
+              /**
+               * «q.b.», «a temperatura ambiente», «circa». Non viene ricalcolata.
+               */
+              nota?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        procedimento: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        };
+        /**
+         * Facoltativo: i tempi scritti nel testo («10 minuti», «30-35 min») diventano timer da soli. Usalo solo se il testo è ambiguo.
+         */
+        timer?:
+          | {
+              etichetta?: string | null;
+              durata: number;
+              /**
+               * Per gli intervalli: 30-35.
+               */
+              durataMax?: number | null;
+              unita: 'secondi' | 'minuti' | 'ore';
+              id?: string | null;
+            }[]
+          | null;
+        consiglio?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        immagine?: (number | null) | Media;
+        galleria?: (number | Media)[] | null;
+        /**
+         * Video di Bunny Stream per questo passaggio.
+         */
+        video?: (number | Video)[] | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Tutto facoltativo: se vuoto si usano titolo, descrizione breve e immagine.
+   */
+  seo?: {
+    titolo?: string | null;
+    descrizione?: string | null;
+    immagine?: (number | null) | Media;
+    noindex?: boolean | null;
+  };
+  /**
+   * JSON-LD keywords.
+   */
+  paroleChiave?: string[] | null;
+  /**
+   * Se vuota viene impostata alla prima pubblicazione.
+   */
+  dataPubblicazione?: string | null;
+  categorie?: (number | Categorie)[] | null;
+  indiceFit?: (number | null) | IndiciFit;
+  occasioni?: (number | Occasioni)[] | null;
+  /**
+   * Calcolato dalla lista e dagli step. Serve allo Svuotafrigo.
+   */
+  ingredientiIndice?: (number | Ingredienti)[] | null;
+  /**
+   * Preparazione + cottura.
+   */
+  tempoTotale?: number | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
-  id: string;
+  id: number;
   key: string;
   data:
     | {
@@ -205,20 +577,44 @@ export interface PayloadKv {
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
-  id: string;
+  id: number;
   document?:
     | ({
         relationTo: 'users';
-        value: string | User;
+        value: number | User;
       } | null)
     | ({
         relationTo: 'media';
-        value: string | Media;
+        value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'video';
+        value: number | Video;
+      } | null)
+    | ({
+        relationTo: 'ingredienti';
+        value: number | Ingredienti;
+      } | null)
+    | ({
+        relationTo: 'categorie';
+        value: number | Categorie;
+      } | null)
+    | ({
+        relationTo: 'indici-fit';
+        value: number | IndiciFit;
+      } | null)
+    | ({
+        relationTo: 'occasioni';
+        value: number | Occasioni;
+      } | null)
+    | ({
+        relationTo: 'ricette';
+        value: number | Ricette;
       } | null);
   globalSlug?: string | null;
   user: {
     relationTo: 'users';
-    value: string | User;
+    value: number | User;
   };
   updatedAt: string;
   createdAt: string;
@@ -228,10 +624,10 @@ export interface PayloadLockedDocument {
  * via the `definition` "payload-preferences".
  */
 export interface PayloadPreference {
-  id: string;
+  id: number;
   user: {
     relationTo: 'users';
-    value: string | User;
+    value: number | User;
   };
   key?: string | null;
   value?:
@@ -251,7 +647,7 @@ export interface PayloadPreference {
  * via the `definition` "payload-migrations".
  */
 export interface PayloadMigration {
-  id: string;
+  id: number;
   name?: string | null;
   batch?: number | null;
   updatedAt: string;
@@ -262,6 +658,7 @@ export interface PayloadMigration {
  * via the `definition` "users_select".
  */
 export interface UsersSelect<T extends boolean = true> {
+  ruolo?: T;
   updatedAt?: T;
   createdAt?: T;
   email?: T;
@@ -286,6 +683,7 @@ export interface UsersSelect<T extends boolean = true> {
  */
 export interface MediaSelect<T extends boolean = true> {
   alt?: T;
+  didascalia?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -297,6 +695,201 @@ export interface MediaSelect<T extends boolean = true> {
   height?: T;
   focalX?: T;
   focalY?: T;
+  sizes?:
+    | T
+    | {
+        card?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        step?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        hero?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        og?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+      };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "video_select".
+ */
+export interface VideoSelect<T extends boolean = true> {
+  titolo?: T;
+  bunnyId?: T;
+  stato?: T;
+  risincronizza?: T;
+  sincronizzatoIl?: T;
+  durata?: T;
+  larghezza?: T;
+  altezza?: T;
+  anteprima?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ingredienti_select".
+ */
+export interface IngredientiSelect<T extends boolean = true> {
+  nome?: T;
+  generateSlug?: T;
+  slug?: T;
+  plurale?: T;
+  descrizione?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "categorie_select".
+ */
+export interface CategorieSelect<T extends boolean = true> {
+  nome?: T;
+  generateSlug?: T;
+  slug?: T;
+  parent?: T;
+  descrizione?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "indici-fit_select".
+ */
+export interface IndiciFitSelect<T extends boolean = true> {
+  nome?: T;
+  generateSlug?: T;
+  slug?: T;
+  parent?: T;
+  descrizione?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "occasioni_select".
+ */
+export interface OccasioniSelect<T extends boolean = true> {
+  nome?: T;
+  generateSlug?: T;
+  slug?: T;
+  parent?: T;
+  descrizione?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ricette_select".
+ */
+export interface RicetteSelect<T extends boolean = true> {
+  titolo?: T;
+  generateSlug?: T;
+  slug?: T;
+  immagine?: T;
+  descrizione?: T;
+  introduzione?: T;
+  tempo?: T;
+  cottura?: T;
+  riposo?: T;
+  difficolta?: T;
+  valutazione?: T;
+  dosiPer?: T;
+  dosiUnita?: T;
+  gruppiIngredienti?:
+    | T
+    | {
+        titolo?: T;
+        righe?:
+          | T
+          | {
+              ingrediente?: T;
+              facoltativo?: T;
+              quantita?: T;
+              unita?: T;
+              nota?: T;
+              id?: T;
+            };
+        id?: T;
+      };
+  step?:
+    | T
+    | {
+        titolo?: T;
+        ingredienti?:
+          | T
+          | {
+              ingrediente?: T;
+              quantita?: T;
+              unita?: T;
+              nota?: T;
+              id?: T;
+            };
+        procedimento?: T;
+        timer?:
+          | T
+          | {
+              etichetta?: T;
+              durata?: T;
+              durataMax?: T;
+              unita?: T;
+              id?: T;
+            };
+        consiglio?: T;
+        immagine?: T;
+        galleria?: T;
+        video?: T;
+        id?: T;
+      };
+  seo?:
+    | T
+    | {
+        titolo?: T;
+        descrizione?: T;
+        immagine?: T;
+        noindex?: T;
+      };
+  paroleChiave?: T;
+  dataPubblicazione?: T;
+  categorie?: T;
+  indiceFit?: T;
+  occasioni?: T;
+  ingredientiIndice?: T;
+  tempoTotale?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
