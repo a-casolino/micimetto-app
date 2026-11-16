@@ -1,0 +1,31 @@
+# Avvia il deploy su xCloud solo per i push su main.
+# Sostituisce il webhook GitHub di xCloud, che partiva a ogni push su qualsiasi branch.
+# Richiede il secret XCLOUD_DEPLOY_URL (URL "Push to Deploy" del sito su xCloud).
+name: Deploy su xCloud
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: xcloud-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Avvia il deploy
+        env:
+          XCLOUD_DEPLOY_URL: ${{ secrets.XCLOUD_DEPLOY_URL }}
+        run: |
+          if [ -z "$XCLOUD_DEPLOY_URL" ]; then
+            echo "::error::Manca il secret XCLOUD_DEPLOY_URL"
+            exit 1
+          fi
+          curl --fail-with-body -sS "$XCLOUD_DEPLOY_URL"
