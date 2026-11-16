@@ -4,4 +4,5 @@ export const Categorie = taxonomy({
   slug: 'categorie',
   singular: 'Categoria',
   plural: 'Categorie',
+  hierarchical: true,
 })

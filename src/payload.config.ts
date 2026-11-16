@@ -12,6 +12,7 @@ import { Media } from './collections/Media'
 import { Occasioni } from './collections/Occasioni'
 import { Ricette } from './collections/Ricette'
 import { Users } from './collections/Users'
+import { Video } from './collections/Video'
 import { migrations } from './migrations'
 
 const filename = fileURLToPath(import.meta.url)
@@ -24,7 +25,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, Ingredienti, Categorie, IndiciFit, Occasioni, Ricette],
+  collections: [Users, Media, Video, Ingredienti, Categorie, IndiciFit, Occasioni, Ricette],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
