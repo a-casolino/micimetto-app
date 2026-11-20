@@ -60,3 +60,15 @@ Senza queste variabili i video si salvano lo stesso, senza metadati. Nel fronten
 ## Media (`media`)
 
 Solo immagini, con `alt` obbligatorio, `didascalia`, punto focale e formati `card` (640×480), `step` (1024), `hero` (1600), `og` (1200×630).
+
+## Pagina ricetta (`/ricetta/[slug]`)
+
+`src/app/(frontend)/ricetta/[slug]/page.tsx`, componenti in `src/components/ricetta/`, logica pura (testata) in `src/lib/ricette/`.
+
+- **Porzioni:** il selettore ricalcola lista e dosi degli step con `calcolaDose()` (`dosi.ts`); unità e nomi si accordano al plurale («2 cucchiai», «3 uova»).
+- **Timer:** `trovaTempi()` (`tempi.ts`) trasforma i tempi del procedimento in pulsanti; se lo step ha `timer[]` si usano solo quelli. Più timer insieme, riquadro fluttuante con Pausa / +1 min / Reset, allarme Web Audio e titolo della scheda che avvisa.
+- **Schermo acceso:** Screen Wake Lock, richiesto di nuovo al ritorno sulla scheda.
+- **Video:** solo i Video `pronti` (o senza stato), player Bunny caricato al clic sull'anteprima.
+- **SEO:** metadati e Open Graph da `seo` con ripiego su titolo/descrizione/immagine, JSON-LD `Recipe`. Impostare `NEXT_PUBLIC_SERVER_URL` in produzione.
+- **Bozze:** chi è entrato nell'admin vede l'anteprima delle bozze (marcata e `noindex`).
+- La pagina è renderizzata a ogni richiesta (`force-dynamic`): le modifiche si vedono subito.
